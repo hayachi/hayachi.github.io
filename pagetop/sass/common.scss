@@ -1,0 +1,123 @@
+/* ===================================================================
+
+common style
+
+=================================================================== */
+//@import "compass";
+@import "setting";
+@import "partials/mixins";
+@import "base";
+@import "partials/reset";
+@import "partials/defines";
+//@import "modules/headers";
+@import "modules/footers";
+
+body{
+  background: #eaf4fb;
+}
+
+/* ===================================================================
+
+header style
+
+=================================================================== */
+
+#header{
+  font-family: 'Raleway', sans-serif;
+  color: #3498DB;
+  text-align: center;
+  padding: 100px 0;
+  h1{
+    width: 980px;
+    margin: auto;
+    text-align: center;
+    @include rem(70);
+    margin-bottom: 20px;
+    font-weight: 200;
+  }
+  p{
+    @include rem(25);
+    font-weight: 300;
+    color: #ed9b75;
+  }
+}
+
+#wrapper {
+  position: relative;
+}
+
+#content{
+  width: 960px;
+  margin: auto;
+}
+
+#footer {
+  background: #3498DB;
+  color: #fff;
+  padding: 74px 0 60px 0px;
+  text-align: left;
+}
+
+#footer .inner {
+  width: 960px;
+  margin: auto;
+  color: #fff;
+}
+
+#footer #page_link {
+  width: 78px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  margin-left: 500px;
+  bottom: 115px;
+}
+
+#footer #button {
+  background: #237DAC;
+  z-index: 2;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+#footer #button i {
+  width: 15px;
+  display: block;
+  height: 9px;
+  left: 50%;
+  top: 25px;
+  margin-left: -7.5px;
+  background: url(../images/arrow.png) no-repeat;
+  position: absolute;
+}
+
+#footer #button_change {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  width: 78px;
+  height: 60px;
+  background: url(../images/back.png) no-repeat;
+}
+
+.section{
+  font-family: 'Raleway', sans-serif;
+  margin-bottom:50px;
+  padding: 50px;
+  box-shadow: 0px 3px 0px rgba(52,152,219,0.2);
+  background: #fff;
+  color: #133851;
+  h2{
+    @include rem(40);
+    margin-bottom: 20px;
+  }
+  p{
+    @include rem(14);
+    line-height: 2em;
+  }
+}
