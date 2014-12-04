@@ -1,0 +1,146 @@
+body {
+  background: #27323d;
+  color: #fff;
+}
+
+#header {
+  background: #1c262f;
+}
+#header .inner {
+  overflow: hidden;
+  padding: 8px 0px 10px 0;
+}
+#header .inner h1 {
+  float: left;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-size: 2rem;
+}
+#header .inner ul {
+  float: left;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 8px;
+  font-size: 0.8rem;
+  margin: 20px 0 10px 20px;
+}
+#header .inner ul li {
+  float: left;
+  margin-right: 20px;
+}
+#header .inner ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#change {
+  background: #f66f6f;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: none;
+  z-index: 9999;
+  padding: 8px 0 10px 0px;
+}
+#change h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-size: 2rem;
+  float: left;
+  font-weight: bold;
+  color: #1c262f;
+}
+#change ul {
+  float: left;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 8px;
+  font-size: 0.8rem;
+  margin: 20px 0 10px 20px;
+}
+#change ul li {
+  float: left;
+  margin-right: 20px;
+}
+#change ul li a {
+  color: #1c262f;
+  text-decoration: none;
+}
+
+#top {
+  padding: 60px 0px 80px 0px;
+  text-align: center;
+  font-family: 'Droid Sans', sans-serif;
+}
+#top h1 {
+  background: #1e272f;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  border-radius: 50%;
+  position: relative;
+  font-size: 50px;
+  font-size: 5rem;
+}
+#top h1 span {
+  position: absolute;
+  top: 85px;
+  width: 300px;
+  left: 0px;
+  text-align: center;
+}
+
+#content {
+  background: #252f39;
+  border-top: #f66f6f 2px solid;
+}
+#content .inner {
+  position: relative;
+  padding: 50px 0;
+}
+#content .inner h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  font-size: 3rem;
+}
+#content .inner p {
+  font-family: 'Droid Sans', sans-serif;
+  line-height: 2.0;
+  margin-bottom: 30px;
+}
+#content #arrow {
+  width: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  left: 0px;
+  margin-left: 452px;
+  top: -32px;
+}
+#content #arrow .left {
+  width: 32px;
+  height: 64px;
+  float: left;
+  background: #f66f6f;
+}
+#content #arrow .right {
+  width: 32px;
+  height: 64px;
+  float: right;
+  background: #d56060;
+}
+#content #arrow .icon {
+  position: absolute;
+  width: 15px;
+  height: 9px;
+  left: 24px;
+  top: 29px;
+  background: url(../images/icon.png) no-repeat;
+}
+
+.inner {
+  width: 960px;
+  margin: auto;
+}

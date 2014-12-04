@@ -1,0 +1,94 @@
+@mixin sprite-setting($name,$map,$dimensions:true) {
+	@if $dimensions {
+		height: image-height(sprite-file($map, $name)) / 2;
+		width: image-width(sprite-file($map, $name)) / 2;
+	}
+	background-position: sprite-position($map, $name);
+}
+
+@mixin rem($size,$base:10) {
+	font-size: $size + px;
+	font-size: ($size / $base) + rem;
+}
+
+@mixin placeholder($color,$size){
+	&::placeholder {
+		color: $color;
+		@include rem($size);
+	}
+}
+
+@mixin box-emboss($opacity, $opacity2){
+	box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+@mixin letterpress($opacity){
+	text-shadow:white($opacity) 0 1px 0;
+}
+
+@mixin columns($x: 1) {
+	display: block;
+	float: left;
+	width: 100% / $gridColumns * $x - $gutter;
+	margin-left: $gutter;
+}
+
+@mixin offset($offset: 1) {
+	margin-left: $gridColumns * $offset - $gutter;
+}
+
+@mixin grid($name) {
+	@for $n from 1 to $gridColumns + 1 {
+		.col-#{$name}-#{$n} {
+			@include columns($n);
+		}
+		.col-#{$name}-offset-#{$n} {
+			@include offset($n);
+		}
+	}
+	.col-#{$name}-one-thirds {
+		@include columns($gridColumns / 3);
+	}
+	.col-#{$name}-two-thirds {
+		@include columns($gridColumns / 3 * 2);
+	}
+	.col-#{$name}-one-thirds-offset {
+		@include offset($gridColumns /3 );
+	}
+	.col-#{$name}-two-thirds-offset {
+		@include offset($gridColumns / 3 * 2);
+	}
+}
+
+@mixin use-grid {
+	.row {
+		@include grid("xs");
+		@if $size-s != 0 {
+			// Mobile small
+			@media (min-width: $size-s) {
+				@include grid("s");
+			}
+		}
+		@if $size-md != 0 {
+			// Mobile middle
+			@media (min-width: $size-md) {
+				@include grid("md");
+			}
+		}
+		@if $size-l != 0 {
+			// Mobile large
+			@media (min-width: $size-l) {
+				@include grid("l");
+			}
+		}
+		@if $size-xl != 0 {
+			// Mobile xtra large
+			@media (min-width: $size-xl) {
+				@include grid("xl");
+			}
+		}
+	}
+}
+
+@mixin droid { font-family: 'Droid Sans', sans-serif; }
+@mixin logo { font-family: 'Dancing Script', cursive; }
