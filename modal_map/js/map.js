@@ -9,7 +9,7 @@ var ZOOM = 15;
 
 $.fn.modalMap = function() {
     // 位置を定義をする
-    var latlng = new google.maps.LatLng(35.710312, 139.777079);
+    var latlng = new google.maps.LatLng(35.710301, 139.777073);
 
     //ベースマップのオプション定義
     var myOptions = {

@@ -3,8 +3,8 @@ var POINT ={
 	lig:{
         id: 'map_canvas_lig',//マップの描画
         pin: 'images/pins_lig.png',//アイコンの画像
-        lat: 35.710312,// 位置を定義をする
-        lng: 139.777079// 位置を定義をする
+        lat: 35.710301,// 位置を定義をする
+        lng: 139.777073// 位置を定義をする
 
     },
     lamp:{
