@@ -1,0 +1,103 @@
+html, body {
+  position: relative;
+  height: 100%;
+  background: #1E90FF; }
+
+#content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #fff; }
+
+#footer {
+  position: absolute;
+  bottom: 0px; }
+
+.section_box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #ccc; }
+
+.stage_slide {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s; }
+
+#section2 .stage_slide.story1 {
+  background: #000;
+  z-index: 4; }
+#section2 .stage_slide.story2 {
+  background: #cccccc;
+  z-index: 3; }
+#section2 .stage_slide.story3 {
+  background: #c8cdd0;
+  z-index: 2; }
+#section2 .stage_slide.story4 {
+  background: #0000CD;
+  z-index: 1; }
+#section2 .stage_slide.current_slide {
+  opacity: 1; }
+
+#section3 .stage_slide.story4 {
+  background: #000;
+  z-index: 1; }
+#section3 .stage_slide.story3 {
+  background: #cccccc;
+  z-index: 2; }
+#section3 .stage_slide.story2 {
+  background: #c8cdd0;
+  z-index: 3; }
+#section3 .stage_slide.story1 {
+  background: #1E90FF;
+  z-index: 4; }
+#section3 .stage_slide.current_slide {
+  opacity: 1; }
+
+#section4 .stage_slide.story1 {
+  background: #00FF7F;
+  z-index: 4; }
+#section4 .stage_slide.story2 {
+  background: #cccccc;
+  z-index: 3; }
+#section4 .stage_slide.story3 {
+  background: #c8cdd0;
+  z-index: 2; }
+#section4 .stage_slide.story4 {
+  background: #0000CD;
+  z-index: 1; }
+#section4 .stage_slide.current_slide {
+  opacity: 1; }
+
+#section5, #sectiion6 {
+  display: block;
+  height: 5000px; }
+
+#pagenation {
+  z-index: 100;
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  margin-top: -30px; }
+  #pagenation li {
+    margin-bottom: 10px; }
+    #pagenation li a {
+      display: block;
+      background: transparent;
+      box-shadow: 0 0 0 1px #eee;
+      border-radius: 5px;
+      width: 10px;
+      height: 10px;
+      -webkit-transition: box-shadow 0.5s;
+              transition: box-shadow 0.5s; }
+    #pagenation li.current a {
+      background: transparent;
+      box-shadow: 0 0 0 1px #000; }
