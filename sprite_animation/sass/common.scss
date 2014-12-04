@@ -77,7 +77,14 @@ header style
 }
 
 .css .sprite{
+  /*一秒間に動くフレーム数*/
   animation: play 1s steps(6) infinite;
+}
+
+@keyframes play {
+  /*一秒間に動くスタイル*/
+  0% { background-position:    0px 0; }
+  100% { background-position: -756px 0; }
 }
 
 .jQuery {
@@ -87,31 +94,5 @@ header style
   .frame4{ background: url(../images/sprite.png) no-repeat -378px 0; }
   .frame5{ background: url(../images/sprite.png) no-repeat -504px 0; }
   .frame6{ background: url(../images/sprite.png) no-repeat -630px 0; }
-}
-
-@keyframes play {
-  0% { background-position:    0px 0; }
-  100% { background-position: -756px 0; }
-}
-
-.code{
-  background: #555;
-  color: #fff;
-  padding: 20px;
-  @include rem(14);
-  line-height: 2em;
-  border-radius: 5px;
-  .yellow{
-    color: #e8bf6a;
-  }
-  .blue{
-    color: #6e9cbe;
-  }
-  .orange{
-    color: #cc7833;
-  }
-  .green{
-    color: #a5c261;
-  }
 }
 

@@ -34,6 +34,12 @@ $(function () {
         var frame5 = function(){
             removeanimeClass();
             $jsAnime.addClass('frame5');
+            animeTimer = setTimeout(frame6, TIMER);
+        }
+
+        var frame6 = function(){
+            removeanimeClass();
+            $jsAnime.addClass('frame6');
             animeTimer = setTimeout(frame1, TIMER);
         }
 
