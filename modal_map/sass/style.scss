@@ -1,0 +1,138 @@
+@import "partial/template";
+
+body{
+	@include font;
+	::selection {
+    background:#e6eef6; /* Safari */
+	}
+	::-moz-selection {
+	background:#e6eef6; /* Firefox */
+	}
+	#content{
+		text-align: center;
+		h1{
+			@include rem(50);
+			font-weight: 200;
+			margin-top:200px;
+			margin-bottom: 20px;
+			line-height: 100%;
+		}
+		p{
+			@include rem(20);
+			font-weight: 200;
+			margin-bottom: 50px;
+		}
+		.button{
+			cursor:pointer;
+			display: inline;
+			font-weight: bold;
+			margin: 0 20px;
+			@include rem(12);
+			a{
+				border-radius:3px;
+				padding: 10px 30px;
+				width: 150px;
+				display: inline-block;
+				transition:all 0.2s;
+				text-decoration: none;
+			}
+		}
+	}
+	.modal{
+		width: 962px;
+		height: 500px;
+	}
+	.map_style{
+		background: #383A3C !important;
+		width: 962px;
+		height: 500px;
+	}
+	#cboxClose{
+      display: block;
+      text-indent: -9999px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 35px;
+      height: 35px;
+      border-radius:0px 0px 0px 3px !important;
+      transition:all 0.2s;
+    }
+    #colorbox{
+    	border-radius:3px !important;
+    }
+}
+
+body#vol1{
+	background: #fff;
+	color:#383A3C;		
+	#content{
+		text-align: center;
+		p{
+			color: #82868b;
+		}
+		.button{
+			a{
+				border:solid #383A3C 2px;
+				color: #383A3C;
+				&:hover{
+					background: #383A3C;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.modal{
+		background: #ffffff;
+	}
+	#colorbox{
+		border: 3px solid #383A3C;
+	}
+	#cboxClose{
+		background: url(../images/close_w.png) no-repeat #383A3C 10px 9px;
+		border: solid 3px #383A3C;
+		border-top: none;
+		border-right: none;
+		&:hover{
+			background: url(../images/close_d.png) no-repeat #fff 10px 9px;
+		}
+	}
+	#cboxOverlay{background:url(../images/overlay_d.png) repeat 0 0;}
+}
+
+body#vol2{
+	background: #383A3C;
+	color:#fff;		
+	#content{
+		text-align: center;
+		p{
+			color: #82868b;
+		}
+		.button{
+			a{
+				border:solid #fff 2px;
+				color: #fff;
+				&:hover{
+					background: #fff;
+					color: #383A3C;
+				}
+			}
+		}
+	}
+	.modal{
+		background: #ffffff;
+	}
+	#colorbox{
+		border: 3px solid #fff;
+	}
+	#cboxClose{
+		background: url(../images/close_d.png) no-repeat #fff 10px 9px;
+		border: solid 3px #fff;
+		border-top: none;
+		border-right: none;
+		&:hover{
+			background: url(../images/close_w.png) no-repeat #383A3C 10px 9px;
+		}
+	}
+	#cboxOverlay{background:url(../images/overlay_d.png) repeat 0 0;}
+}

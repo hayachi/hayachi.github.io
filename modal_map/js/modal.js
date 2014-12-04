@@ -1,0 +1,10 @@
+$(function(){
+	$('.link').colorbox({
+		inline:true,
+		transition:'none',
+		//モーダルが表示されきった時に地図を生成
+		onComplete:function(){
+			$("#map_canvas_lig").modalMap();
+		}
+	});
+});
