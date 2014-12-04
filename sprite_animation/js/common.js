@@ -1,5 +1,5 @@
 $(function () {
-    var TIMER = 180; //一つのフレームに対しての時間
+    var TIMER = 160; //一つのフレームに対しての時間
     var animeTimer; //タイマー設定用
 
     //アニメーションの関数
