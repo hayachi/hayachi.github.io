@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="DEMO">
+<meta name="description" content="DEMO">
+<title>jQuery button effect</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?ver=1.8.3"></script>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv-printshiv.js"></script>
+<script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/btn_style.css" />
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="color-1" style="padding-top:200px;">
+	<div id="wrapper">
+		<section class="color-1">
+			<p>
+				<button class="btn btn-1 btn-1a">BUTTON</button>
+			</p>
+		</section>
+	</div><!-- /container -->
+<!--st js-->
+<script src="js/btn_plugin.js"></script>
+<script src="js/jquery.color.js"></script>
+<script>
+$(function() {
+	var SPEED　= 300;/* スピード設定 */
+	$(".btn-1a").enter(function() {
+		$(this).stop().animate(/* マウスを乗せたとき */
+			{ "backgroundColor" : "#ffffff" }, SPEED);
+	},function() {
+		$(this).stop().animate(/* マウスが外れたとき */
+			{ "backgroundColor" : "#0e83cd" }, SPEED);
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/* ===================================================================
+CSS information
+ file name  :  btn_style.css
+=================================================================== */
+#wrapper {
+  height: 100%;
+  position: relative;
+}
+#wrapper section {
+  font-family: 'Droid Sans', sans-serif;
+  margin: 0 auto;
+  padding: 5em 3em;
+  text-align: center;
+  color: #fff;
+}
+#wrapper section p {
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  z-index: 1;
+}
+#wrapper section p.text {
+  font-size: 1.4em;
+}
+#wrapper section button {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+#wrapper section button .text {
+  font-weight: bold;
+}
+
+.color-1 {
+  background: #0e83cd;
+}
+
+.color-2 {
+  background: #2ecc71;
+}
+
+.color-3 {
+  background: #9e54bd;
+}
+
+/* Button base　style */
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+}
+
+/* Blue Section */
+.btn-1 {
+  border: 3px solid #fff;
+  color: #fff;
+  width: 240px;
+  height: 75px;
+  background: #0e83cd;
+}
+.btn-1:hover {
+  color: #0e83cd;
+}
+
+/* Button 1b */
+.btn-1b .back {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: #fff;
+}
+.btn-1b .text {
+  z-index: 2;
+  width: 100%;
+  top: 25px;
+  position: absolute;
+  left: 0px;
+  color: #fff;
+}
+.btn-1b:hover .text {
+  color: #0e83cd;
+}
+
+/* Button 1c */
+.btn-1c .back {
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  position: absolute;
+}
+.btn-1c .text {
+  z-index: 2;
+  width: 100%;
+  top: 25px;
+  position: absolute;
+  left: 0px;
+  color: #fff;
+}
+.btn-1c:hover .text {
+  color: #0e83cd;
+}
+
+/* Button 1d */
+.btn-1d {
+  overflow: hidden;
+}
+.btn-1d .text {
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  width: 100%;
+  top: 25px;
+}
+.btn-1d .back {
+  width: 90%;
+  height: 100%;
+  top: 0px;
+  position: absolute;
+  left: 5%;
+  z-index: 1;
+  background: #fff;
+}
+.btn-1d .back .left {
+  float: right;
+  width: 50%;
+  height: 100%;
+  background: #0e83cd;
+}
+.btn-1d .back .right {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: #0e83cd;
+}
+.btn-1d:hover .text {
+  color: #0e83cd;
+}
+
+/* Button 1e */
+.btn-1e {
+  overflow: hidden;
+}
+.btn-1e .text {
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  width: 100%;
+  top: 25px;
+}
+.btn-1e .back {
+  height: 90%;
+  width: 100%;
+  left: 0;
+  top: 5%;
+  position: absolute;
+  background: #fff;
+  display: block;
+}
+.btn-1e .top, .btn-1e .bottom {
+  width: 100%;
+  height: 50%;
+  display: block;
+  left: 0;
+  background: #0e83cd;
+  position: absolute;
+  z-index: 1;
+}
+.btn-1e .top {
+  top: 0px;
+}
+.btn-1e .bottom {
+  bottom: 0px;
+}
+
+/* Button 1f */
+.btn-1f {
+  overflow: hidden;
+}
+.btn-1f .text {
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  width: 100%;
+  top: 25px;
+}
+.btn-1f .back {
+  height: 90%;
+  width: 100%;
+  left: 0;
+  top: 5%;
+  position: absolute;
+  background: #fff;
+  display: block;
+}
+.btn-1f .top, .btn-1f .bottom {
+  width: 100%;
+  height: 50%;
+  display: block;
+  left: 0;
+  background: #0e83cd;
+  position: absolute;
+  z-index: 1;
+}
+.btn-1f .top {
+  top: 0px;
+}
+.btn-1f .bottom {
+  bottom: 0px;
+}
+
+/* Green Section */
+.btn-2 {
+  border-radius: 50px;
+  border: 3px solid #fff;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.btn-2:hover .arrow {
+  opacity: 1;
+}
+.btn-2.icon-arrow-left .arrow {
+  background: url(../images/arrow_r.png) no-repeat center;
+}
+.btn-2.icon-arrow-right .arrow {
+  background: url(../images/arrow_l.png) no-repeat center;
+}
+.btn-2 .arrow {
+  position: absolute;
+  height: 100%;
+  width: 30px;
+}
+
+/* Button 2a */
+.btn-2a .arrow {
+  top: 0;
+  left: 130%;
+  opacity: 0;
+}
+
+/* Button 2b */
+.btn-2b .arrow {
+  left: -50%;
+  top: 0;
+  opacity: 0;
+}
+
+/* Button 2c */
+.btn-2c .arrow {
+  left: 70%;
+  top: 0;
+  opacity: 0;
+}
+
+/* Button 2d */
+.btn-2d .arrow {
+  left: 30%;
+  top: 0;
+  opacity: 0;
+}
+
+/* Button 3 */
+.btn-3 {
+  background: #823aa0;
+  color: #fff;
+  height: 70px;
+  min-width: 260px;
+  line-height: 24px;
+  font-size: 16px;
+  overflow: hidden;
+}
+.btn-3 .text {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.btn-3 .face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 2;
+  font-size: 100%;
+  position: absolute;
+}
+
+/* Button 3a */
+.btn-3a span {
+  left: 0px;
+}
+.btn-3a .text {
+  top: 25px;
+}
+.btn-3a .face {
+  top: -100%;
+}
+
+/* Button 3b */
+.btn-3b span {
+  left: 0px;
+}
+.btn-3b .text {
+  top: 25px;
+  left: 0px;
+}
+.btn-3b .face {
+  top: 25px;
+  left: 200%;
+}
