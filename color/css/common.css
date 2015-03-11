@@ -238,11 +238,10 @@ footer style
 
 =================================================================== */
 #footer {
-  width: 980px;
-  margin: 100px auto 0;
+  margin: 100px 0 0;
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid #4e5e6a; }
+  background: #e5e9ec; }
 
 /* ===================================================================
 

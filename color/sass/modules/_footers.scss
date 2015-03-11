@@ -4,9 +4,8 @@ footer style
 
 =================================================================== */
 #footer{
-  width: 980px;
-  margin:100px auto 0;
+  margin:100px 0 0;
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid $key;
+  background:lighten($key_font,45%);
 }
