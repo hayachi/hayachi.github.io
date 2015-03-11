@@ -1,0 +1,148 @@
+/* ===================================================================
+
+main style
+
+=================================================================== */
+
+#main{
+  width: 980px;
+  margin: auto;
+  .section{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  h2{
+    @include rem(40);
+    font-weight: 300;
+    @extend %font2;
+    padding-bottom: 13px;
+    margin-bottom: 12px;
+    position: relative;
+    &:after{
+      content: "";
+      width: 10%;
+      border-top: 1px solid $key_font;
+      display: inline-block;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      margin-left: -5%;
+    }
+  }
+  h3{
+    margin-bottom: 40px;
+    color: $key_font;
+  }
+  ul{
+    text-align: center;
+  }
+  li{
+    width: 50px;
+    height: 80px;
+    margin: 0 10px;
+    display: inline-block;
+    span{
+      @extend %font2;
+      font-weight: 300;
+      @include rem(15);
+      position: relative;
+      bottom: -5px;
+    }
+    i{
+      display: block;
+      width:50px;
+      height: 50px;
+    }
+    &.Lighten00{
+      i{
+        background: $lighten00;
+      }
+    }
+    &.Lighten10{
+      i{
+        background: $lighten10;
+      }
+    }
+    &.Lighten20{
+      i{
+        background: $lighten20;
+      }
+    }
+    &.Lighten30{
+      i{
+        background: $lighten30;
+      }
+    }
+    &.Darken00{
+      i{
+        background: $Darken00;
+      }
+    }
+    &.Darken10{
+      i{
+        background: $Darken10;
+      }
+    }
+    &.Darken20{
+      i{
+        background: $Darken20;
+      }
+    }
+    &.Darken30{
+      i{
+        background: $Darken30;
+      }
+    }
+    &.Saturate00{
+      i{
+        background: $Saturate00;
+      }
+    }
+    &.Saturate10{
+      i{
+        background: $Saturate10;
+      }
+    }
+    &.Desaturate00{
+      i{
+        background: $Desaturate00;
+      }
+    }
+    &.Desaturate10{
+      i{
+        background: $Desaturate10;
+      }
+    }
+    &.Desaturate20{
+      i{
+        background: $Desaturate20;
+      }
+    }
+    &.Desaturate30{
+      i{
+        background: $Desaturate30;
+      }
+    }
+    &.Desaturate40{
+      i{
+        background: $Desaturate40;
+      }
+    }
+    &.Desaturate50{
+      i{
+        background: $Desaturate50;
+      }
+    }
+    &.Desaturate60{
+      i{
+        background: $Desaturate60;
+      }
+    }
+    &.Desaturate70{
+      i{
+        background: $Desaturate70;
+      }
+    }
+  }
+}

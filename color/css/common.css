@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* ===================================================================
+
+common style
+
+=================================================================== */
+/* ===================================================================
+
+setting 変数定義をここに記載していく
+
+=================================================================== */
+body {
+  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+#header h1, #main h2, #main li span {
+  font-family: 'Raleway', sans-serif;
+  color: #4e5e6a; }
+
+/* ===================================================================
+
+define style
+
+=================================================================== */
+/* ===================================================================
+
+mixin style
+
+=================================================================== */
+/* ===================================================================
+
+util style
+
+=================================================================== */
+/* ===================================================================
+
+base style
+
+=================================================================== */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1; }
+
+a {
+  text-decoration: none;
+  color: #4e5e6a;
+  outline: none; }
+  a:hover {
+    color: #647887; }
+
+::-moz-selection {
+  background: #e5e9ec;
+  color: #4e5e6a; }
+
+::selection {
+  background: #e5e9ec;
+  color: #4e5e6a; }
+
+/* ===================================================================
+
+reset style
+
+=================================================================== */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  line-height: 1;
+  word-break: break-all; }
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+img {
+  vertical-align: bottom; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, div, address, iframe, canvas, hr, textarea {
+  display: block;
+  line-height: 1; }
+
+a, label {
+  cursor: pointer; }
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  display: block; }
+
+address, em {
+  font-style: normal; }
+
+hr {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+textarea {
+  resize: vertical;
+  overflow: hidden;
+  -webkit-appearance: none;
+  border: none; }
+
+input, button, select {
+  vertical-align: middle;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none; }
+
+table {
+  border-collapse: collapse; }
+
+*:before, *:after {
+  padding: 0;
+  margin: 0;
+  line-height: 1; }
+
+/* ===================================================================
+
+header style
+
+=================================================================== */
+#header {
+  width: 980px;
+  margin: 100px auto;
+  text-align: center; }
+  #header h1 {
+    font-size: 70px;
+    font-size: 7rem;
+    font-weight: 300 !important; }
+
+/* ===================================================================
+
+main style
+
+=================================================================== */
+#main {
+  width: 980px;
+  margin: auto; }
+  #main .section {
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 80px; }
+  #main h2 {
+    font-size: 40px;
+    font-size: 4rem;
+    font-weight: 300;
+    padding-bottom: 13px;
+    margin-bottom: 12px;
+    position: relative; }
+    #main h2:after {
+      content: "";
+      width: 10%;
+      border-top: 1px solid #647887;
+      display: inline-block;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      margin-left: -5%; }
+  #main h3 {
+    margin-bottom: 40px;
+    color: #647887; }
+  #main ul {
+    text-align: center; }
+  #main li {
+    width: 50px;
+    height: 80px;
+    margin: 0 10px;
+    display: inline-block; }
+    #main li span {
+      font-weight: 300;
+      font-size: 15px;
+      font-size: 1.5rem;
+      position: relative;
+      bottom: -5px; }
+    #main li i {
+      display: block;
+      width: 50px;
+      height: 50px; }
+    #main li.Lighten00 i {
+      background: #46afed; }
+    #main li.Lighten10 i {
+      background: #74c3f2; }
+    #main li.Lighten20 i {
+      background: #a3d7f6; }
+    #main li.Lighten30 i {
+      background: #d1ebfb; }
+    #main li.Darken00 i {
+      background: #46afed; }
+    #main li.Darken10 i {
+      background: #189be8; }
+    #main li.Darken20 i {
+      background: #127cbb; }
+    #main li.Darken30 i {
+      background: #0e5d8c; }
+    #main li.Saturate00 i {
+      background: #46afed; }
+    #main li.Saturate10 i {
+      background: #3cb2f7; }
+    #main li.Desaturate00 i {
+      background: #46afed; }
+    #main li.Desaturate10 i {
+      background: #50ace3; }
+    #main li.Desaturate20 i {
+      background: #5aaad9; }
+    #main li.Desaturate30 i {
+      background: #64a7cf; }
+    #main li.Desaturate40 i {
+      background: #6fa5c4; }
+    #main li.Desaturate50 i {
+      background: #79a2ba; }
+    #main li.Desaturate60 i {
+      background: #839fb0; }
+    #main li.Desaturate70 i {
+      background: #8d9da6; }
+
+/* ===================================================================
+
+footer style
+
+=================================================================== */
+#footer {
+  width: 980px;
+  margin: 100px auto 0;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #4e5e6a; }
+
+/* ===================================================================
+
+side style
+
+=================================================================== */

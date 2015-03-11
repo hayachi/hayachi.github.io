@@ -1,0 +1,16 @@
+/* ===================================================================
+
+header style
+
+=================================================================== */
+
+#header{
+  width: 980px;
+  margin: 100px auto;
+  text-align: center;
+  h1{
+    @include rem(70);
+    @extend %font2;
+    font-weight:300 !important;
+  }
+}

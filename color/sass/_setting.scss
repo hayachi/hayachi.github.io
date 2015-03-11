@@ -1,0 +1,53 @@
+/* ===================================================================
+
+setting 変数定義をここに記載していく
+
+=================================================================== */
+
+// color //
+$key:#4e5e6a;
+$selection:lighten($key, 55%);
+$key_font:lighten($key, 10%);
+
+// color lighten //
+$base:#46AFED;
+$lighten00:lighten($base, 0%);
+$lighten10:lighten($base, 10%);
+$lighten20:lighten($base, 20%);
+$lighten30:lighten($base, 30%);
+
+// color darken //
+$Darken00:darken($base, 0%);
+$Darken10:darken($base, 10%);
+$Darken20:darken($base, 20%);
+$Darken30:darken($base, 30%);
+
+// color saturate //
+$Saturate00:saturate($base, 0%);
+$Saturate10:saturate($base, 10%);
+$Saturate20:saturate($base, 20%);
+$Saturate30:saturate($base, 30%);
+
+// color desaturate //
+$Desaturate00:desaturate($base, 0%);
+$Desaturate10:desaturate($base, 10%);
+$Desaturate20:desaturate($base, 20%);
+$Desaturate30:desaturate($base, 30%);
+$Desaturate40:desaturate($base, 40%);
+$Desaturate50:desaturate($base, 50%);
+$Desaturate60:desaturate($base, 60%);
+$Desaturate70:desaturate($base, 70%);
+
+// clum width
+$gutter: 0;
+$size_max: 1020px;
+
+// font
+%font1{
+	font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+%font2{
+  font-family: 'Raleway', sans-serif;
+  color: $key;
+}
