@@ -5,6 +5,12 @@ header style
 =================================================================== */
 
 #header{
-  padding: 30px;
-  @include rem(20);
+  width: 980px;
+  margin: 100px auto;
+  text-align: center;
+  h1{
+    @include rem(70);
+    @extend %font2;
+    font-weight:300 !important;
+  }
 }
