@@ -1,0 +1,146 @@
+/* ===================================================================
+
+content style
+
+=================================================================== */
+section{
+  text-align: center;
+  .inner{
+    width: 200px;
+    margin: auto;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    div{
+      opacity: 0;
+      transform-origin:0px 0px;
+      animation-name: Drop;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+  }
+  h2{
+    @include rem(50);
+    padding: 125px 0;
+    @extend %webFont;
+    font-weight: 100 !important;
+  }
+}
+
+#sakura{
+  color: $sakura;
+  background: $sakuraBg;
+  margin-bottom: 100px;
+  .inner{
+    div{
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 15px;
+      background: url("../../images/sakura.png") no-repeat;
+      &.flake2,{
+        -webkit-background-size: 5px 6px !important;
+        background-size: 5px 6px !important;
+      }
+      &.flake4{
+        -webkit-background-size: 5px 6px !important;
+        background-size: 5px 6px !important;
+      }
+      &.flake6{
+        -webkit-background-size: 5px 6px !important;
+        background-size: 5px 6px !important;
+      }
+      &.flake8{
+        -webkit-background-size: 5px 6px !important;
+        background-size: 5px 6px !important;
+      }
+    }
+  }
+}
+#snow{
+  color: #fff;
+  background: $snow;
+  .inner{
+    div{
+      position: absolute;
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 2.5px;
+      background: #fff;
+      &.flake2,{
+        width: 2px;
+        height: 2px;
+      }
+      &.flake4{
+        width: 2px;
+        height: 2px;
+      }
+      &.flake6{
+        width: 2px;
+        height: 2px;
+      }
+      &.flake8{
+        width: 2px;
+        height: 2px;
+      }
+    }
+  }
+}
+
+@keyframes Drop {
+  0% {
+    transform:translateY(0px);
+    opacity:0;
+  }
+  50% {
+    transform:translateY(50px);
+    opacity: 1;
+  }
+  100% {
+    transform:translateY(100px);
+    opacity: 0.3;
+  }
+}
+
+
+.flake1 {
+  left: 20px;
+  animation-duration:2.5s;
+}
+.flake2 {
+  left:40px;
+  animation-duration:2.7s;
+  animation-delay:0.2s;
+}
+.flake3 {
+  left:60px;
+  animation-duration:2.9s;
+  animation-delay:0.4s;
+}
+.flake4 {
+  left:80px;
+  animation-duration:2.4s;
+  animation-delay:0s;
+}
+.flake5 {
+  left:100px;
+  animation-duration:2.4s;
+  animation-delay:1s;
+}
+.flake6 {
+  left:150px;
+  animation-duration:2.2s;
+  animation-delay:1.2s;
+}
+.flake7 {
+  left:170px;
+  animation-duration:2.7s;
+  animation-delay:1.2s;
+}
+.flake8 {
+  left:200px;
+  animation-duration:3s;
+  animation-delay:1.4s;
+}

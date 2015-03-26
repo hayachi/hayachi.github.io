@@ -1,0 +1,22 @@
+/* ===================================================================
+
+header style
+
+=================================================================== */
+
+#header{
+  padding: 100px 0;
+  display: block;
+  h1{
+    @include rem(70);
+    @extend %webFont;
+    color: #414A51;
+    text-align: center;
+    font-weight: 100;
+    span{
+      position: relative;
+      top: -9px;
+      font-weight: 100;
+    }
+  }
+}

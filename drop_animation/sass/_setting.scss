@@ -1,0 +1,18 @@
+// color //
+$red:#cc0000; //キーカラー1
+$sakura:#92405d;
+$sakuraBg:lighten($sakura,55%);
+$snow:#142744;
+
+// clum width
+$gutter: 0;
+$size_max: 980px;
+
+// font
+%font1{
+	font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+%webFont{
+  font-family: 'Raleway', sans-serif;
+}

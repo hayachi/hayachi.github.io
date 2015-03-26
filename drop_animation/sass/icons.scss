@@ -1,0 +1,30 @@
+@import "partials/template";
+
+/* ===================================================================
+
+icon style
+
+=================================================================== */
+
+/*
+compassを使ったspriteのscssです。
+アイコン画像を"sprites/icons"フォルダに入れると、"sprites/"にスプライト画像が吐き出されます。
+コメントアウトを外して使ってください。
+*/
+
+$sprites: sprite-map("sprites/icons/*.png",$layout:smart);
+$sprites-img:sprite-url($sprites);
+
+/*アイコンを表示させたいときは、<i>に.iconクラスを振ってください*/
+.icon{
+	display: block;
+	background-repeat: no-repeat;
+	background-image: $sprites-img;
+}
+
+/*アイコンをテキストの左右に配置したいときは、<i>に.icon_mクラスを振ってください*/
+.icon_m{
+	position: absolute;
+	top: 50%;
+}
+
