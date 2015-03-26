@@ -172,7 +172,7 @@ section {
     display: block;
     width: 10px;
     height: 15px;
-    background: url("../../images/sakura.png") no-repeat; }
+    background: url("../images/sakura.png") no-repeat; }
     #sakura .inner div.flake2 {
       background-size: 5px 6px !important; }
     #sakura .inner div.flake4 {
