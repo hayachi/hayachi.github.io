@@ -1,17 +1,150 @@
+@import "setting";
+@import "partials/mixins";
+@import "base";
+@import "partials/reset";
+
 /* ===================================================================
 
 common style
 
 =================================================================== */
 
-@import "compass";
+body {
+  background: $back;
+}
 
-@import "setting";
-@import "partials/defines";
-@import "partials/mixins";
-@import "base";
-@import "partials/reset";
+#header {
+  text-align: center;
+  padding: 100px 0px;
+  @include rem(75);
+  @extend %font2;
+  h1 {
+    letter-spacing: 5px;
+    color: $text;
+    text-shadow: 1px 1px 0px $back, 3px 3px 0px $text;
+  }
+}
 
-@import "modules/headers";
-@import "modules/footers";
-@import "modules/sides";
+#contents {
+  text-align: center;
+}
+
+.social {
+  text-align: center;
+  padding: 100px 0px 200px 0px;
+  li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    position: relative;
+    margin: 0px 16px;
+    transform: rotate(45deg);
+    i {
+      transform: rotate(-45deg);
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      margin-right: -20px;
+      margin-top: -20px;
+      &:before {
+        @include rem(40);
+      }
+    }
+    a {
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+      border: 3px solid $text;
+      color: $text;
+      box-sizing: border-box;
+      position: relative;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      transition: borderColor 0.3s;
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: width 0.3s, opacity 0.3s;
+        width: 0;
+        height: 105%;
+        top: 50%;
+        left: 50%;
+        background: $text;
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 3px;
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+/*facebookアイコン調整*/
+.icon-fa {
+  margin-top: -21px !important;
+  margin-right: -11px !important;
+  &:before {
+    font-size: 5rem !important;
+  }
+}
+
+/*facebook*/
+.fa a {
+  &:after {
+    background: $fa !important;
+  }
+  &:hover {
+    border-color: $fa !important;
+  }
+}
+
+/*hatena*/
+.ha a{
+  &:after {
+    background: $ha !important;
+  }
+  &:hover {
+    border-color: $ha !important;
+  }
+}
+
+/*twitter*/
+.tw a {
+  &:after {
+    background: $tw !important;
+  }
+  &:hover {
+    border-color: $tw !important;
+  }
+}
+
+/*google*/
+.go a {
+  &:after {
+    background: $go !important;
+  }
+  &:hover {
+    border-color: $go !important;
+  }
+}
+
+/*line*/
+.li a {
+  &:after {
+    background: $li !important;
+  }
+  &:hover {
+    border-color:$li !important;
+  }
+}
