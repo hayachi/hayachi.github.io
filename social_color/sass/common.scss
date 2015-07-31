@@ -18,6 +18,12 @@ body {
   padding: 100px 0px;
   @include rem(75);
   @extend %font2;
+  @include query(555){
+   @include rem(50);
+  }
+  @include query(320){
+    @include rem(40);
+  }
   h1 {
     letter-spacing: 5px;
     color: $text;
@@ -28,31 +34,43 @@ body {
 #contents {
   text-align: center;
 }
+section{
+  margin-bottom: 100px;
+  h2{
+    @include rem(30);
+    @extend %font2;
+    color: $text;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $text;
+  }
+}
 
 .social {
   text-align: center;
-  padding: 100px 0px 200px 0px;
+  padding: 50px 0px 50px 0px;
   li {
     display: inline-block;
     width: 100px;
     height: 100px;
     padding: 0px;
     position: relative;
-    margin: 0px 16px;
+    margin: 18px 16px;
     transform: rotate(45deg);
     i {
       transform: rotate(-45deg);
       display: inline-block;
-      width: 40px;
-      height: 40px;
       position: absolute;
       right: 50%;
+      color: #fff;
       top: 50%;
-      margin-right: -20px;
-      margin-top: -20px;
-      &:before {
-        @include rem(40);
-      }
+      margin-right: -47px;
+      margin-top: -11px;
+      font-style:normal;
+      text-align: center;
+      @extend %font2;
+      @include rem(15);
+      width: 100%;
     }
     a {
       display: block;
@@ -71,23 +89,14 @@ body {
         position: absolute;
         z-index: -1;
         transition: width 0.3s, opacity 0.3s;
-        width: 0;
+        width: 100%;
         height: 105%;
         top: 50%;
         left: 50%;
         background: $text;
-        opacity: 0;
+        opacity: 1;
         transform: translateX(-50%) translateY(-50%);
         border-radius: 3px;
-      }
-      &:hover {
-        &:after {
-          width: 100%;
-          opacity: 1;
-        }
-        i:before{
-          color: #fff;
-        }
       }
     }
   }
@@ -102,52 +111,193 @@ body {
   }
 }
 
+
+
+// よく使うソーシャルサイト //
 /*facebook*/
-.fa a {
-  &:after {
-    background: $fa !important;
-  }
-  &:hover {
-    border-color: $fa !important;
+.facebook a {
+  border: 3px solid $facebook !important;
+  &:after{
+    background: $facebook !important;
   }
 }
 
-/*hatena*/
-.ha a{
-  &:after {
-    background: $ha !important;
-  }
-  &:hover {
-    border-color: $ha !important;
+.hatena a {
+  border: 3px solid $hatena !important;
+  &:after{
+    background: $hatena !important;
   }
 }
 
-/*twitter*/
-.tw a {
-  &:after {
-    background: $tw !important;
-  }
-  &:hover {
-    border-color: $tw !important;
+.twitter a {
+  border: 3px solid $twitter !important;
+  &:after{
+    background: $twitter !important;
   }
 }
 
-/*google*/
-.go a {
-  &:after {
-    background: $go !important;
-  }
-  &:hover {
-    border-color: $go !important;
+.google a {
+  border: 3px solid $google !important;
+  &:after{
+    background: $google !important;
   }
 }
 
-/*line*/
-.li a {
-  &:after {
-    background: $li !important;
-  }
-  &:hover {
-    border-color:$li !important;
+.poket a {
+  border: 3px solid $poket !important;
+  &:after{
+    background: $poket !important;
   }
 }
+
+.line a {
+  border: 3px solid $line !important;
+  &:after{
+    background: $line !important;
+  }
+}
+
+// その他のソーシャルサイト //
+.codepen a {
+  border: 3px solid $codepen !important;
+  &:after{
+    background: $codepen !important;
+  }
+}
+
+.github a {
+  border: 3px solid $github !important;
+  &:after{
+    background: $github !important;
+  }
+}
+
+.tambler a {
+  border: 3px solid $tambler !important;
+  &:after{
+    background: $tambler !important;
+  }
+}
+
+.instaglum a {
+  border: 3px solid $instaglum !important;
+  &:after{
+    background: $instaglum !important;
+  }
+}
+
+.linkedin a {
+  border: 3px solid $linkedin !important;
+  &:after{
+    background: $linkedin !important;
+  }
+}
+
+.vimeo a {
+  border: 3px solid $vimeo !important;
+  &:after{
+    background: $vimeo !important;
+  }
+}
+
+.vine a {
+  border: 3px solid $vine !important;
+  &:after{
+    background: $vine !important;
+  }
+}
+
+.spotify a {
+  border: 3px solid $spotify !important;
+  &:after{
+    background: $spotify !important;
+  }
+}
+
+.rss a {
+  border: 3px solid $rss !important;
+  &:after{
+    background: $rss !important;
+  }
+}
+
+.blogger a {
+  border: 3px solid $blogger !important;
+  &:after{
+    background: $blogger !important;
+  }
+}
+
+.mixi a {
+  border: 3px solid $mixi !important;
+  &:after{
+    background: $mixi !important;
+  }
+}
+
+.youtube a {
+  border: 3px solid $youtube !important;
+  &:after{
+    background: $youtube !important;
+  }
+}
+
+.pintalest a {
+  border: 3px solid $pintalest !important;
+  &:after{
+    background: $pintalest !important;
+  }
+}
+
+.flicker a {
+  border: 3px solid $flicker !important;
+  &:after{
+    background: $flicker !important;
+  }
+}
+
+// サービス系 //
+
+.bitbacket a {
+   border: 3px solid $bitbacket !important;
+   &:after{
+     background: $bitbacket !important;
+   }
+ }
+
+.peypal a {
+  border: 3px solid $peypal !important;
+  &:after{
+    background: $peypal !important;
+  }
+}
+
+.wordpress a {
+  border: 3px solid $wordpress !important;
+  &:after{
+    background: $wordpress !important;
+  }
+}
+
+.skype a {
+  border: 3px solid $skype !important;
+  &:after{
+    background: $skype !important;
+  }
+}
+
+.feedly a {
+  border: 3px solid $feedly !important;
+  &:after{
+    background: $feedly !important;
+  }
+}
+
+.evernote a {
+  border: 3px solid $evernote !important;
+  &:after{
+    background: $evernote !important;
+  }
+}
+
+// ソフトウェア系 //

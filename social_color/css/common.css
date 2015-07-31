@@ -4,45 +4,8 @@
 setting 変数定義をここに記載していく
 
 =================================================================== */
-body {
-  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
-
-#header {
+#header, section h2, .social li i {
   font-family: 'Allerta Stencil', sans-serif; }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?-r7zw33");
-  src: url("../fonts/icomoon.eot?#iefix-r7zw33") format("embedded-opentype"), url("../fonts/icomoon.ttf?-r7zw33") format("truetype"), url("../fonts/icomoon.woff?-r7zw33") format("woff"), url("../fonts/icomoon.svg?-r7zw33#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-fa:before {
-  content: "\e602"; }
-
-.icon-go:before {
-  content: "\e604"; }
-
-.icon-tw:before {
-  content: "\e601"; }
-
-.icon-ha:before {
-  content: "\e605"; }
-
-.icon-li:before {
-  content: "\e603"; }
 
 html {
   font-size: 62.5%; }
@@ -155,6 +118,14 @@ body {
   padding: 100px 0px;
   font-size: 75px;
   font-size: 7.5rem; }
+  @media all and (max-width: 555px) {
+    #header {
+      font-size: 50px;
+      font-size: 5rem; } }
+  @media all and (max-width: 320px) {
+    #header {
+      font-size: 40px;
+      font-size: 4rem; } }
   #header h1 {
     letter-spacing: 5px;
     color: #333333;
@@ -163,16 +134,26 @@ body {
 #contents {
   text-align: center; }
 
+section {
+  margin-bottom: 100px; }
+  section h2 {
+    font-size: 30px;
+    font-size: 3rem;
+    color: #333333;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333333; }
+
 .social {
   text-align: center;
-  padding: 100px 0px 200px 0px; }
+  padding: 50px 0px 50px 0px; }
   .social li {
     display: inline-block;
     width: 100px;
     height: 100px;
     padding: 0px;
     position: relative;
-    margin: 0px 16px;
+    margin: 18px 16px;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
@@ -181,16 +162,17 @@ body {
           -ms-transform: rotate(-45deg);
               transform: rotate(-45deg);
       display: inline-block;
-      width: 40px;
-      height: 40px;
       position: absolute;
       right: 50%;
+      color: #fff;
       top: 50%;
-      margin-right: -20px;
-      margin-top: -20px; }
-      .social li i:before {
-        font-size: 40px;
-        font-size: 4rem; }
+      margin-right: -47px;
+      margin-top: -11px;
+      font-style: normal;
+      text-align: center;
+      font-size: 15px;
+      font-size: 1.5rem;
+      width: 100%; }
     .social li a {
       display: block;
       width: 100px;
@@ -212,21 +194,16 @@ body {
         z-index: -1;
         -webkit-transition: width 0.3s, opacity 0.3s;
                 transition: width 0.3s, opacity 0.3s;
-        width: 0;
+        width: 100%;
         height: 105%;
         top: 50%;
         left: 50%;
         background: #333333;
-        opacity: 0;
+        opacity: 1;
         -webkit-transform: translateX(-50%) translateY(-50%);
             -ms-transform: translateX(-50%) translateY(-50%);
                 transform: translateX(-50%) translateY(-50%);
         border-radius: 3px; }
-      .social li a:hover:after {
-        width: 100%;
-        opacity: 1; }
-      .social li a:hover i:before {
-        color: #fff; }
 
 /*facebookアイコン調整*/
 .icon-fa {
@@ -236,36 +213,132 @@ body {
     font-size: 5rem !important; }
 
 /*facebook*/
-.fa a:after {
-  background: #3b5998 !important; }
+.facebook a {
+  border: 3px solid #3B5998 !important; }
+  .facebook a:after {
+    background: #3B5998 !important; }
 
-.fa a:hover {
-  border-color: #3b5998 !important; }
+.hatena a {
+  border: 3px solid #2C6EBD !important; }
+  .hatena a:after {
+    background: #2C6EBD !important; }
 
-/*hatena*/
-.ha a:after {
-  background: #2C6EBD !important; }
+.twitter a {
+  border: 3px solid #55ACEE !important; }
+  .twitter a:after {
+    background: #55ACEE !important; }
 
-.ha a:hover {
-  border-color: #2C6EBD !important; }
+.google a {
+  border: 3px solid #CC3732 !important; }
+  .google a:after {
+    background: #CC3732 !important; }
 
-/*twitter*/
-.tw a:after {
-  background: #00aced !important; }
+.poket a {
+  border: 3px solid #DC3D50 !important; }
+  .poket a:after {
+    background: #DC3D50 !important; }
 
-.tw a:hover {
-  border-color: #00aced !important; }
+.line a {
+  border: 3px solid #00C300 !important; }
+  .line a:after {
+    background: #00C300 !important; }
 
-/*google*/
-.go a:after {
-  background: #dd4b39 !important; }
+.codepen a {
+  border: 3px solid #000000 !important; }
+  .codepen a:after {
+    background: #000000 !important; }
 
-.go a:hover {
-  border-color: #dd4b39 !important; }
+.github a {
+  border: 3px solid #171515 !important; }
+  .github a:after {
+    background: #171515 !important; }
 
-/*line*/
-.li a:after {
-  background: #1EC221 !important; }
+.tambler a {
+  border: 3px solid #44546B !important; }
+  .tambler a:after {
+    background: #44546B !important; }
 
-.li a:hover {
-  border-color: #1EC221 !important; }
+.instaglum a {
+  border: 3px solid #3F729B !important; }
+  .instaglum a:after {
+    background: #3F729B !important; }
+
+.linkedin a {
+  border: 3px solid #0077B5 !important; }
+  .linkedin a:after {
+    background: #0077B5 !important; }
+
+.vimeo a {
+  border: 3px solid #1AB7EA !important; }
+  .vimeo a:after {
+    background: #1AB7EA !important; }
+
+.vine a {
+  border: 3px solid #00B489 !important; }
+  .vine a:after {
+    background: #00B489 !important; }
+
+.spotify a {
+  border: 3px solid #84BD00 !important; }
+  .spotify a:after {
+    background: #84BD00 !important; }
+
+.rss a {
+  border: 3px solid #e0812a !important; }
+  .rss a:after {
+    background: #e0812a !important; }
+
+.blogger a {
+  border: 3px solid #F57D00 !important; }
+  .blogger a:after {
+    background: #F57D00 !important; }
+
+.mixi a {
+  border: 3px solid #E0C074 !important; }
+  .mixi a:after {
+    background: #E0C074 !important; }
+
+.youtube a {
+  border: 3px solid #CD201F !important; }
+  .youtube a:after {
+    background: #CD201F !important; }
+
+.pintalest a {
+  border: 3px solid #CC2127 !important; }
+  .pintalest a:after {
+    background: #CC2127 !important; }
+
+.flicker a {
+  border: 3px solid #ff0084 !important; }
+  .flicker a:after {
+    background: #ff0084 !important; }
+
+.bitbacket a {
+  border: 3px solid #003366 !important; }
+  .bitbacket a:after {
+    background: #003366 !important; }
+
+.peypal a {
+  border: 3px solid #336699 !important; }
+  .peypal a:after {
+    background: #336699 !important; }
+
+.wordpress a {
+  border: 3px solid #21759b !important; }
+  .wordpress a:after {
+    background: #21759b !important; }
+
+.skype a {
+  border: 3px solid #00AFF0 !important; }
+  .skype a:after {
+    background: #00AFF0 !important; }
+
+.feedly a {
+  border: 3px solid #33b051 !important; }
+  .feedly a:after {
+    background: #33b051 !important; }
+
+.evernote a {
+  border: 3px solid #6FB536 !important; }
+  .evernote a:after {
+    background: #6FB536 !important; }
