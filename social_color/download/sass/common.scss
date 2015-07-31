@@ -1,0 +1,364 @@
+@import "setting";
+@import "partials/mixins";
+@import "base";
+@import "partials/reset";
+
+/* ===================================================================
+
+common style
+
+=================================================================== */
+
+body {
+  background: $back;
+}
+
+#header {
+  text-align: center;
+  padding: 100px 0px;
+  @include rem(75);
+  @extend %font2;
+  @include query(555) {
+    @include rem(50);
+  }
+  @include query(320) {
+    @include rem(40);
+  }
+  h1 {
+    letter-spacing: 5px;
+    color: $text;
+    text-shadow: 1px 1px 0px $back, 3px 3px 0px $text;
+  }
+}
+
+#contents {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 100px;
+  h2 {
+    @include rem(30);
+    @extend %font2;
+    color: $text;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $text;
+  }
+}
+
+.social {
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+  li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    position: relative;
+    margin: 18px 16px;
+    transform: rotate(45deg);
+    i {
+      transform: rotate(-45deg);
+      display: inline-block;
+      position: absolute;
+      right: 50%;
+      color: #fff;
+      top: 50%;
+      margin-right: -47px;
+      margin-top: -11px;
+      font-style: normal;
+      text-align: center;
+      @extend %font2;
+      @include rem(15);
+      width: 100%;
+    }
+    a {
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+      border: 3px solid $text;
+      color: $text;
+      box-sizing: border-box;
+      position: relative;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      transition: borderColor 0.3s;
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: width 0.3s, opacity 0.3s;
+        width: 100%;
+        height: 105%;
+        top: 50%;
+        left: 50%;
+        background: $text;
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+/*facebookアイコン調整*/
+.icon-fa {
+  margin-top: -21px !important;
+  margin-right: -11px !important;
+  &:before {
+    font-size: 5rem !important;
+  }
+}
+
+// よく使うソーシャルサイト //
+/*facebook*/
+.facebook a {
+  border: 3px solid $facebook !important;
+  &:after {
+    background: $facebook !important;
+  }
+}
+
+.hatena a {
+  border: 3px solid $hatena !important;
+  &:after {
+    background: $hatena !important;
+  }
+}
+
+.twitter a {
+  border: 3px solid $twitter !important;
+  &:after {
+    background: $twitter !important;
+  }
+}
+
+.google a {
+  border: 3px solid $google !important;
+  &:after {
+    background: $google !important;
+  }
+}
+
+.poket a {
+  border: 3px solid $poket !important;
+  &:after {
+    background: $poket !important;
+  }
+}
+
+.line a {
+  border: 3px solid $line !important;
+  &:after {
+    background: $line !important;
+  }
+}
+
+// その他のソーシャルサイト //
+.codepen a {
+  border: 3px solid $codepen !important;
+  &:after {
+    background: $codepen !important;
+  }
+}
+
+.github a {
+  border: 3px solid $github !important;
+  &:after {
+    background: $github !important;
+  }
+}
+
+.tambler a {
+  border: 3px solid $tambler !important;
+  &:after {
+    background: $tambler !important;
+  }
+}
+
+.instaglum a {
+  border: 3px solid $instaglum !important;
+  &:after {
+    background: $instaglum !important;
+  }
+}
+
+.linkedin a {
+  border: 3px solid $linkedin !important;
+  &:after {
+    background: $linkedin !important;
+  }
+}
+
+.vimeo a {
+  border: 3px solid $vimeo !important;
+  &:after {
+    background: $vimeo !important;
+  }
+}
+
+.vine a {
+  border: 3px solid $vine !important;
+  &:after {
+    background: $vine !important;
+  }
+}
+
+.spotify a {
+  border: 3px solid $spotify !important;
+  &:after {
+    background: $spotify !important;
+  }
+}
+
+.rss a {
+  border: 3px solid $rss !important;
+  &:after {
+    background: $rss !important;
+  }
+}
+
+.blogger a {
+  border: 3px solid $blogger !important;
+  &:after {
+    background: $blogger !important;
+  }
+}
+
+.mixi a {
+  border: 3px solid $mixi !important;
+  &:after {
+    background: $mixi !important;
+  }
+}
+
+.youtube a {
+  border: 3px solid $youtube !important;
+  &:after {
+    background: $youtube !important;
+  }
+}
+
+.pintalest a {
+  border: 3px solid $pintalest !important;
+  &:after {
+    background: $pintalest !important;
+  }
+}
+
+.flicker a {
+  border: 3px solid $flicker !important;
+  &:after {
+    background: $flicker !important;
+  }
+}
+
+// サービス系 //
+
+.bitbacket a {
+  border: 3px solid $bitbacket !important;
+  &:after {
+    background: $bitbacket !important;
+  }
+}
+
+.peypal a {
+  border: 3px solid $peypal !important;
+  &:after {
+    background: $peypal !important;
+  }
+}
+
+.wordpress a {
+  border: 3px solid $wordpress !important;
+  &:after {
+    background: $wordpress !important;
+  }
+}
+
+.skype a {
+  border: 3px solid $skype !important;
+  &:after {
+    background: $skype !important;
+  }
+}
+
+.feedly a {
+  border: 3px solid $feedly !important;
+  &:after {
+    background: $feedly !important;
+  }
+}
+
+.evernote a {
+  border: 3px solid $evernote !important;
+  &:after {
+    background: $evernote !important;
+  }
+}
+
+// ソフトウェア系 //
+.sourcetree a {
+  border: 3px solid $sourcetree !important;
+  &:after {
+    background: $sourcetree !important;
+  }
+}
+
+.windows a {
+  border: 3px solid $windows !important;
+  &:after {
+    background: $windows !important;
+  }
+}
+
+.sass a {
+  border: 3px solid $sass !important;
+  &:after {
+    background: $sass !important;
+  }
+}
+
+.gulp a {
+  border: 3px solid $gulp !important;
+  &:after{
+    background: $gulp !important;
+  }
+}
+
+.git a {
+  border: 3px solid $git !important;
+  &:after{
+    background: $git !important;
+  }
+}
+
+.html5 a {
+  border: 3px solid $html5 !important;
+  &:after{
+    background: $html5 !important;
+  }
+}
+
+.firefox a {
+  border: 3px solid $firefox !important;
+  &:after{
+    background: $firefox !important;
+  }
+}
+
+.grunt a {
+  border: 3px solid $grunt !important;
+  &:after{
+    background: $grunt !important;
+  }
+}
+
+.android a {
+  border: 3px solid $android !important;
+  &:after{
+    background: $android !important;
+  }
+}

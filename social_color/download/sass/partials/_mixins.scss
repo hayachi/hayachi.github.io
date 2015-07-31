@@ -1,0 +1,10 @@
+@mixin rem($size,$base:10) {
+	font-size: $size + px;
+	font-size: ($size / $base) + rem;
+}
+
+@mixin query($size){
+	@media all and (max-width: $size + px) {
+		@content;
+	}
+}

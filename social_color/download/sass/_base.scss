@@ -1,0 +1,30 @@
+@import "partials/util";
+
+html{
+	font-size: 62.5%;
+}
+body {
+	@include rem(12);
+	@extend %font1;
+	line-height: 1;
+}
+a {
+	text-decoration: none;
+	color: #189de5;
+	outline: none;
+	text-decoration: none;
+	&:hover {
+		color: #676767;
+		text-decoration: underline;
+	}
+}
+::selection {
+//	background: $key_c1;
+	color: #fff;
+}
+
+//util
+// @include util(def);
+
+// font
+// webfontを@importさせる場合はここに記述
