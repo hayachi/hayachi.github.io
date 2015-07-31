@@ -18,10 +18,10 @@ body {
   padding: 100px 0px;
   @include rem(75);
   @extend %font2;
-  @include query(555){
-   @include rem(50);
+  @include query(555) {
+    @include rem(50);
   }
-  @include query(320){
+  @include query(320) {
     @include rem(40);
   }
   h1 {
@@ -34,9 +34,10 @@ body {
 #contents {
   text-align: center;
 }
-section{
+
+section {
   margin-bottom: 100px;
-  h2{
+  h2 {
     @include rem(30);
     @extend %font2;
     color: $text;
@@ -66,7 +67,7 @@ section{
       top: 50%;
       margin-right: -47px;
       margin-top: -11px;
-      font-style:normal;
+      font-style: normal;
       text-align: center;
       @extend %font2;
       @include rem(15);
@@ -111,48 +112,46 @@ section{
   }
 }
 
-
-
 // よく使うソーシャルサイト //
 /*facebook*/
 .facebook a {
   border: 3px solid $facebook !important;
-  &:after{
+  &:after {
     background: $facebook !important;
   }
 }
 
 .hatena a {
   border: 3px solid $hatena !important;
-  &:after{
+  &:after {
     background: $hatena !important;
   }
 }
 
 .twitter a {
   border: 3px solid $twitter !important;
-  &:after{
+  &:after {
     background: $twitter !important;
   }
 }
 
 .google a {
   border: 3px solid $google !important;
-  &:after{
+  &:after {
     background: $google !important;
   }
 }
 
 .poket a {
   border: 3px solid $poket !important;
-  &:after{
+  &:after {
     background: $poket !important;
   }
 }
 
 .line a {
   border: 3px solid $line !important;
-  &:after{
+  &:after {
     background: $line !important;
   }
 }
@@ -160,98 +159,98 @@ section{
 // その他のソーシャルサイト //
 .codepen a {
   border: 3px solid $codepen !important;
-  &:after{
+  &:after {
     background: $codepen !important;
   }
 }
 
 .github a {
   border: 3px solid $github !important;
-  &:after{
+  &:after {
     background: $github !important;
   }
 }
 
 .tambler a {
   border: 3px solid $tambler !important;
-  &:after{
+  &:after {
     background: $tambler !important;
   }
 }
 
 .instaglum a {
   border: 3px solid $instaglum !important;
-  &:after{
+  &:after {
     background: $instaglum !important;
   }
 }
 
 .linkedin a {
   border: 3px solid $linkedin !important;
-  &:after{
+  &:after {
     background: $linkedin !important;
   }
 }
 
 .vimeo a {
   border: 3px solid $vimeo !important;
-  &:after{
+  &:after {
     background: $vimeo !important;
   }
 }
 
 .vine a {
   border: 3px solid $vine !important;
-  &:after{
+  &:after {
     background: $vine !important;
   }
 }
 
 .spotify a {
   border: 3px solid $spotify !important;
-  &:after{
+  &:after {
     background: $spotify !important;
   }
 }
 
 .rss a {
   border: 3px solid $rss !important;
-  &:after{
+  &:after {
     background: $rss !important;
   }
 }
 
 .blogger a {
   border: 3px solid $blogger !important;
-  &:after{
+  &:after {
     background: $blogger !important;
   }
 }
 
 .mixi a {
   border: 3px solid $mixi !important;
-  &:after{
+  &:after {
     background: $mixi !important;
   }
 }
 
 .youtube a {
   border: 3px solid $youtube !important;
-  &:after{
+  &:after {
     background: $youtube !important;
   }
 }
 
 .pintalest a {
   border: 3px solid $pintalest !important;
-  &:after{
+  &:after {
     background: $pintalest !important;
   }
 }
 
 .flicker a {
   border: 3px solid $flicker !important;
-  &:after{
+  &:after {
     background: $flicker !important;
   }
 }
@@ -259,45 +258,107 @@ section{
 // サービス系 //
 
 .bitbacket a {
-   border: 3px solid $bitbacket !important;
-   &:after{
-     background: $bitbacket !important;
-   }
- }
+  border: 3px solid $bitbacket !important;
+  &:after {
+    background: $bitbacket !important;
+  }
+}
 
 .peypal a {
   border: 3px solid $peypal !important;
-  &:after{
+  &:after {
     background: $peypal !important;
   }
 }
 
 .wordpress a {
   border: 3px solid $wordpress !important;
-  &:after{
+  &:after {
     background: $wordpress !important;
   }
 }
 
 .skype a {
   border: 3px solid $skype !important;
-  &:after{
+  &:after {
     background: $skype !important;
   }
 }
 
 .feedly a {
   border: 3px solid $feedly !important;
-  &:after{
+  &:after {
     background: $feedly !important;
   }
 }
 
 .evernote a {
   border: 3px solid $evernote !important;
-  &:after{
+  &:after {
     background: $evernote !important;
   }
 }
 
 // ソフトウェア系 //
+.sourcetree a {
+  border: 3px solid $sourcetree !important;
+  &:after {
+    background: $sourcetree !important;
+  }
+}
+
+.windows a {
+  border: 3px solid $windows !important;
+  &:after {
+    background: $windows !important;
+  }
+}
+
+.sass a {
+  border: 3px solid $sass !important;
+  &:after {
+    background: $sass !important;
+  }
+}
+
+.gulp a {
+  border: 3px solid $gulp !important;
+  &:after{
+    background: $gulp !important;
+  }
+}
+
+.git a {
+  border: 3px solid $git !important;
+  &:after{
+    background: $git !important;
+  }
+}
+
+.html5 a {
+  border: 3px solid $html5 !important;
+  &:after{
+    background: $html5 !important;
+  }
+}
+
+.firefox a {
+  border: 3px solid $firefox !important;
+  &:after{
+    background: $firefox !important;
+  }
+}
+
+.grunt a {
+  border: 3px solid $grunt !important;
+  &:after{
+    background: $grunt !important;
+  }
+}
+
+.android a {
+  border: 3px solid $android !important;
+  &:after{
+    background: $android !important;
+  }
+}

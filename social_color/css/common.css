@@ -342,3 +342,48 @@ section {
   border: 3px solid #6FB536 !important; }
   .evernote a:after {
     background: #6FB536 !important; }
+
+.sourcetree a {
+  border: 3px solid #1F5081 !important; }
+  .sourcetree a:after {
+    background: #1F5081 !important; }
+
+.windows a {
+  border: 3px solid #00bcf2 !important; }
+  .windows a:after {
+    background: #00bcf2 !important; }
+
+.sass a {
+  border: 3px solid #CF649A !important; }
+  .sass a:after {
+    background: #CF649A !important; }
+
+.gulp a {
+  border: 3px solid #E94C4F !important; }
+  .gulp a:after {
+    background: #E94C4F !important; }
+
+.git a {
+  border: 3px solid #F03C2E !important; }
+  .git a:after {
+    background: #F03C2E !important; }
+
+.html5 a {
+  border: 3px solid #F14A29 !important; }
+  .html5 a:after {
+    background: #F14A29 !important; }
+
+.firefox a {
+  border: 3px solid #E66000 !important; }
+  .firefox a:after {
+    background: #E66000 !important; }
+
+.grunt a {
+  border: 3px solid #fba919 !important; }
+  .grunt a:after {
+    background: #fba919 !important; }
+
+.android a {
+  border: 3px solid #A4C639 !important; }
+  .android a:after {
+    background: #A4C639 !important; }
