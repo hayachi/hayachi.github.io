@@ -1,0 +1,84 @@
+@import "setting";
+@import "partials/mixins";
+@import "base";
+@import "partials/reset";
+
+/* ===================================================================
+
+common style
+
+=================================================================== */
+html,body{
+  height: 100%;
+}
+
+body {
+  background: url('../images/bg.jpg') no-repeat;
+  background-size:cover;
+}
+
+.header {
+  background:#000;
+  position: relative;
+  h1{
+    @extend %font2;
+    text-align: center;
+    @include rem(25);
+    padding: 25px 40px 25px 0px;
+    color: #fff;
+  }
+  .menu-button{
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    i{
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 3px;
+      background: #fff;
+      transition: background 0.5s;
+      position: relative;
+      left: 5px;
+      top: 14px;
+      &:before,
+      &:after{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 3px;
+        background: #fff;
+        position: absolute;
+        transform: rotate(0deg);
+        transition: all 0.3s !important;
+      }
+      &:before{
+      transform:translateY(8px);
+        transition: top 0.5s;
+      }
+      &:after{
+      transform:translateY(-8px);
+        transition: bottom 0.5s;
+      }
+    }
+  }
+  &.is-open{
+    .menu-button{
+      i{
+        background: #000;
+        &:after{
+          transform:translateY(0px) rotate(-45deg);
+          bottom: 0px;
+        }
+        &:before{
+          transform:translateY(0px) rotate(45deg);
+          top: 0px;
+        }
+      }
+    }
+  }
+}
