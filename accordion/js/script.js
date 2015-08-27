@@ -19,7 +19,7 @@ $(function(){
 
 
     //リサイズ時でも変動可能なグローバル変数
-    $windiw.on('load resize', function () {
+    $window.on('load resize', function() {
         //ウィンドウの高さを取得
         windowHeight = $window.height();
         //wrapperの高さを取得
