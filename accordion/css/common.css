@@ -3,7 +3,7 @@
 setting
 
 =================================================================== */
-.header h1 {
+.header h1, .nav-content ul li, .content p {
   font-family: 'Codystar', cursive; }
 
 html {
@@ -112,72 +112,117 @@ common style
 html, body {
   height: 100%; }
 
-body {
-  background: url("../images/bg.jpg") no-repeat;
+#contents {
+  background: url("../images/bg.jpg") #000 no-repeat;
   background-size: cover; }
 
 .header {
-  background: #000;
-  position: relative; }
+  width: 100%;
+  z-index: 3; }
   .header h1 {
     text-align: center;
     font-size: 25px;
     font-size: 2.5rem;
-    padding: 25px 40px 25px 0px;
+    padding: 20px 40px 20px 0px;
     color: #fff; }
-  .header .menu-button {
-    width: 30px;
-    height: 30px;
-    display: block;
+  .header .header__heading {
+    background: #000;
     position: absolute;
-    right: 14px;
-    top: 20px; }
-    .header .menu-button i {
+    width: 100%;
+    z-index: 3; }
+
+.menu-button {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 14px;
+  top: 15px; }
+  .menu-button i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: #fff;
+    -webkit-transition: background 0.5s;
+            transition: background 0.5s;
+    position: relative;
+    left: 5px;
+    top: 14px; }
+    .menu-button i:before,
+    .menu-button i:after {
+      content: "";
       display: block;
       width: 20px;
       height: 2px;
       border-radius: 3px;
       background: #fff;
-      -webkit-transition: background 0.5s;
-              transition: background 0.5s;
-      position: relative;
-      left: 5px;
-      top: 14px; }
-      .header .menu-button i:before,
-      .header .menu-button i:after {
-        content: "";
-        display: block;
-        width: 20px;
-        height: 2px;
-        border-radius: 3px;
-        background: #fff;
-        position: absolute;
-        -webkit-transform: rotate(0deg);
-            -ms-transform: rotate(0deg);
-                transform: rotate(0deg);
-        -webkit-transition: all 0.3s !important;
-                transition: all 0.3s !important; }
-      .header .menu-button i:before {
-        -webkit-transform: translateY(8px);
-            -ms-transform: translateY(8px);
-                transform: translateY(8px);
-        -webkit-transition: top 0.5s;
-                transition: top 0.5s; }
-      .header .menu-button i:after {
-        -webkit-transform: translateY(-8px);
-            -ms-transform: translateY(-8px);
-                transform: translateY(-8px);
-        -webkit-transition: bottom 0.5s;
-                transition: bottom 0.5s; }
-  .header.is-open .menu-button i {
-    background: #000; }
-    .header.is-open .menu-button i:after {
-      -webkit-transform: translateY(0px) rotate(-45deg);
-          -ms-transform: translateY(0px) rotate(-45deg);
-              transform: translateY(0px) rotate(-45deg);
-      bottom: 0px; }
-    .header.is-open .menu-button i:before {
-      -webkit-transform: translateY(0px) rotate(45deg);
-          -ms-transform: translateY(0px) rotate(45deg);
-              transform: translateY(0px) rotate(45deg);
-      top: 0px; }
+      position: absolute;
+      -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transition: all 0.3s !important;
+              transition: all 0.3s !important; }
+    .menu-button i:before {
+      -webkit-transform: translateY(8px);
+          -ms-transform: translateY(8px);
+              transform: translateY(8px);
+      -webkit-transition: top 0.5s;
+              transition: top 0.5s; }
+    .menu-button i:after {
+      -webkit-transform: translateY(-8px);
+          -ms-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-transition: bottom 0.5s;
+              transition: bottom 0.5s; }
+
+.is-open .menu-button i {
+  background: #000; }
+  .is-open .menu-button i:after {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+        -ms-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg);
+    bottom: 0px; }
+  .is-open .menu-button i:before {
+    -webkit-transform: translateY(0px) rotate(45deg);
+        -ms-transform: translateY(0px) rotate(45deg);
+            transform: translateY(0px) rotate(45deg);
+    top: 0px; }
+
+.nav-content {
+  position: absolute;
+  width: 100%;
+  top: -735px;
+  z-index: 2;
+  -webkit-transition: 1.5s top;
+          transition: 1.5s top; }
+  .nav-content ul li {
+    font-size: 22px;
+    font-size: 2.2rem; }
+    .nav-content ul li a {
+      text-align: center;
+      display: block;
+      padding: 20px 0px;
+      color: #fff; }
+
+.is-open .nav-content {
+  top: 65px; }
+
+#js-cover {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  z-index: 1; }
+
+.content {
+  height: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .content p {
+    color: #fff;
+    position: relative;
+    bottom: -80px;
+    text-align: center; }
