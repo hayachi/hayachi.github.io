@@ -195,28 +195,22 @@ html, body {
     .menu-button i:before {
       -webkit-transform: translateY(8px);
           -ms-transform: translateY(8px);
-              transform: translateY(8px);
-      -webkit-transition: top 0.5s;
-              transition: top 0.5s; }
+              transform: translateY(8px); }
     .menu-button i:after {
       -webkit-transform: translateY(-8px);
           -ms-transform: translateY(-8px);
-              transform: translateY(-8px);
-      -webkit-transition: bottom 0.5s;
-              transition: bottom 0.5s; }
+              transform: translateY(-8px); }
 
 .is-open .menu-button i {
   background: #000; }
   .is-open .menu-button i:after {
     -webkit-transform: translateY(0px) rotate(-45deg);
         -ms-transform: translateY(0px) rotate(-45deg);
-            transform: translateY(0px) rotate(-45deg);
-    bottom: 0px; }
+            transform: translateY(0px) rotate(-45deg); }
   .is-open .menu-button i:before {
     -webkit-transform: translateY(0px) rotate(45deg);
         -ms-transform: translateY(0px) rotate(45deg);
-            transform: translateY(0px) rotate(45deg);
-    top: 0px; }
+            transform: translateY(0px) rotate(45deg); }
 
 .content {
   height: 100px;

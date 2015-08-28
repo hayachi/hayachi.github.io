@@ -1,6 +1,6 @@
 $(function(){
 
-    //アコーディオン用の変数
+    //1.アコーディオン用の変数
     var $window = $(window),
         $wrapper = $('#wrapper'),
         $accordion = $('#js-accordion'),
@@ -18,17 +18,16 @@ $(function(){
         HEADER_HEIGHT = 65;
 
 
-    //リサイズ時でも変動可能なグローバル変数
-    $window.on('load resize', function() {
+    //2.リサイズ時でも変動可能なグローバル変数
+    $window.on('load orientationchange', function() {
         //ウィンドウの高さを取得
         windowHeight = $window.height();
         //wrapperの高さを取得
         bodyHeight = $wrapper.height();
 
-        console.log('w',windowHeight,'b',bodyHeight);
     });
 
-    //開く時の動き
+    //3.開く時の動き
     function openAction(){
         //クラスをつける
         $accordion.addClass('is-open');
@@ -51,7 +50,18 @@ $(function(){
         }
     }
 
-    //閉じる時の動き
+    function openActionStandar(){
+        //クラスをつける
+        $accordion.addClass('is-open');
+
+        //wrapperの高さwindowの高さと同じにする
+        $wrapper.css({overflow:'hidden'}).height(windowHeight);
+
+        //高さをつけてオーバーレイを表示
+        $jsCover.height(windowHeight).stop().animate({opacity:1},SPEED);
+    }
+
+    //4.閉じる時の動き
     function closeAction(){
         //クラスを外す
         $accordion.removeClass('is-open');
@@ -63,7 +73,7 @@ $(function(){
         $jsCover.stop().animate({opacity:0},SPEED);
     }
 
-    //クリックイベント
+    //5.クリックイベント
     $menuButton.on('click',function(){
         //open用のクラスがあるかどうか判定
         if($accordion.hasClass('is-open')){
@@ -72,10 +82,12 @@ $(function(){
         } else {
             //開く時の動き
             openAction();
+            //▼スマホ対応してない時の動き
+            //openActionStandar();
         }
     });
 
-    //開いたままスマホを傾けた時
+    //6.開いたままスマホを傾けた時
     $window.on('orientationchange', function () {
         if($accordion.hasClass('is-open')){
             if(navHeight > windowHeight) {
