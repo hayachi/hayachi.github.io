@@ -131,6 +131,35 @@ html, body {
     width: 100%;
     z-index: 3; }
 
+.nav-content {
+  position: absolute;
+  width: 100%;
+  top: -735px;
+  z-index: 2;
+  -webkit-transition: 1.5s top;
+          transition: 1.5s top; }
+  .nav-content ul li {
+    font-size: 22px;
+    font-size: 2.2rem; }
+    .nav-content ul li a {
+      text-align: center;
+      display: block;
+      padding: 20px 0px;
+      color: #fff; }
+
+.is-open .nav-content {
+  top: 65px; }
+
+#js-cover {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  z-index: 1; }
+
 .menu-button {
   width: 30px;
   height: 30px;
@@ -188,35 +217,6 @@ html, body {
         -ms-transform: translateY(0px) rotate(45deg);
             transform: translateY(0px) rotate(45deg);
     top: 0px; }
-
-.nav-content {
-  position: absolute;
-  width: 100%;
-  top: -735px;
-  z-index: 2;
-  -webkit-transition: 1.5s top;
-          transition: 1.5s top; }
-  .nav-content ul li {
-    font-size: 22px;
-    font-size: 2.2rem; }
-    .nav-content ul li a {
-      text-align: center;
-      display: block;
-      padding: 20px 0px;
-      color: #fff; }
-
-.is-open .nav-content {
-  top: 65px; }
-
-#js-cover {
-  background: #000;
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: 0px;
-  opacity: 0;
-  z-index: 1; }
 
 .content {
   height: 100px;

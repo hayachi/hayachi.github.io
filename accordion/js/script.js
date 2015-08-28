@@ -76,9 +76,8 @@ $(function(){
     });
 
     //開いたままスマホを傾けた時
-    $window.on('resize orientationchange', function () {
+    $window.on('orientationchange', function () {
         if($accordion.hasClass('is-open')){
-            console.log('r')
             if(navHeight > windowHeight) {
                 //wrapperの高さnavの高さにする
                 $wrapper.height(navHeight + HEADER_HEIGHT);
