@@ -19,7 +19,7 @@ $(function(){
 
 
     //2.リサイズ時でも変動可能なグローバル変数
-    $window.on('load orientationchange', function() {
+    $window.on('load resize', function() {
         //ウィンドウの高さを取得
         windowHeight = $window.height();
         //wrapperの高さを取得
@@ -88,7 +88,7 @@ $(function(){
     });
 
     //6.開いたままスマホを傾けた時
-    $window.on('orientationchange', function () {
+    $window.on('resize', function () {
         if($accordion.hasClass('is-open')){
             if(navHeight > windowHeight) {
                 //wrapperの高さnavの高さにする
