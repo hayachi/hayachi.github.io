@@ -14,17 +14,17 @@ $(function(){
         //アニメーションの速度
         SPEED = 300,
 
+        //wrapperの高さを取得
+        bodyHeight = $wrapper.height(),
+
         //ヘッダータイトルの高さ
         HEADER_HEIGHT = 65;
 
 
     //2.リサイズ時でも変動可能なグローバル変数
-    $window.on('load resize', function() {
+    $window.on('load orientationchange', function() {
         //ウィンドウの高さを取得
         windowHeight = $window.height();
-        //wrapperの高さを取得
-        bodyHeight = $wrapper.height();
-
     });
 
     //3.開く時の動き
@@ -50,17 +50,6 @@ $(function(){
         }
     }
 
-    function openActionStandar(){
-        //クラスをつける
-        $accordion.addClass('is-open');
-
-        //wrapperの高さwindowの高さと同じにする
-        $wrapper.css({overflow:'hidden'}).height(windowHeight);
-
-        //高さをつけてオーバーレイを表示
-        $jsCover.height(windowHeight).stop().animate({opacity:1},SPEED);
-    }
-
     //4.閉じる時の動き
     function closeAction(){
         //クラスを外す
@@ -82,13 +71,11 @@ $(function(){
         } else {
             //開く時の動き
             openAction();
-            //▼スマホ対応してない時の動き
-            //openActionStandar();
         }
     });
 
     //6.開いたままスマホを傾けた時
-    $window.on('resize', function () {
+    $window.on('orientationchange', function () {
         if($accordion.hasClass('is-open')){
             if(navHeight > windowHeight) {
                 //wrapperの高さnavの高さにする
@@ -101,4 +88,5 @@ $(function(){
             }
         }
     });
+
 });
