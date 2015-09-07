@@ -1,0 +1,56 @@
+@import "setting";
+@import "partials/mixins";
+@import "base";
+@import "partials/reset";
+
+/* ===================================================================
+
+common style
+
+=================================================================== */
+html,body{
+  height: 100%;
+  color: #fff;
+  background: -webkit-gradient(radial, 50% 18%, 0, 50% 18%, 120, color-stop(1.00, #000), color-stop(0.63, #1c1c1c), color-stop(0.00, #333));
+  background: -webkit-radial-gradient(50% 18%, circle, #333 0%, #1c1c1c 63%, #000 100%);
+  background: -moz-radial-gradient(50% 18%, circle, #333 0%, #1c1c1c 63%, #000 100%);
+  background: radial-gradient(50% 18%, circle, #333 0%, #1c1c1c 63%, #000 100%);
+}
+
+#header{
+  padding: 100px 0px;
+  h1{
+    @extend %webfont;
+    color: #fff;
+    text-align: center;
+    @include rem(60);
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 14px #000;
+  }
+}
+
+.content{
+  width: 100%;
+  .icon-animation{
+    width: 20%;
+    height: 200px;
+    float: left;
+    display: block;
+    background: rgba(255,255,255,0.02);
+    position: relative;
+    span{
+      width: 50px;
+      height: 3px;
+      border-radius: 3px;
+      display: block;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -25px;
+      &:before,&:after{
+        content:'';
+      }
+    }
+  }
+}

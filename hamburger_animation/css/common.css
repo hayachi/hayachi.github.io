@@ -1,0 +1,149 @@
+/* ===================================================================
+
+setting
+
+=================================================================== */
+#header h1 {
+  font-family: 'Poiret One', cursive; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1; }
+
+a {
+  text-decoration: none;
+  color: #189de5;
+  outline: none;
+  text-decoration: none; }
+  a:hover {
+    color: #676767;
+    text-decoration: underline; }
+
+::-moz-selection {
+  color: #fff; }
+
+::selection {
+  color: #fff; }
+
+/* ===================================================================
+
+reset style
+
+=================================================================== */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  line-height: 1;
+  word-break: break-all; }
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+img {
+  vertical-align: bottom; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, div, address, iframe, canvas, hr, textarea {
+  display: block;
+  line-height: 1; }
+
+a, label {
+  cursor: pointer; }
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  display: block; }
+
+address, em {
+  font-style: normal; }
+
+hr {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+textarea {
+  resize: vertical;
+  overflow: hidden;
+  -webkit-appearance: none;
+  border: none; }
+
+input, button, select {
+  vertical-align: middle;
+  border-radius: 0px;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none; }
+
+table {
+  border-collapse: collapse; }
+
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  line-height: 1; }
+
+/* ===================================================================
+
+common style
+
+=================================================================== */
+html, body {
+  height: 100%;
+  color: #fff;
+  background: -webkit-gradient(radial, 50% 18%, 0, 50% 18%, 120, color-stop(1, #000), color-stop(0.63, #1c1c1c), color-stop(0, #333));
+  background: -webkit-radial-gradient(50% 18%, circle, #333 0%, #1c1c1c 63%, #000 100%);
+  background: radial-gradient(50% 18%, circle, #333 0%, #1c1c1c 63%, #000 100%); }
+
+#header {
+  padding: 100px 0px; }
+  #header h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    font-size: 6rem;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 14px #000; }
+
+.content {
+  width: 100%; }
+  .content .icon-animation {
+    width: 20%;
+    height: 200px;
+    float: left;
+    display: block;
+    background: rgba(255, 255, 255, 0.02);
+    position: relative; }
+    .content .icon-animation span {
+      width: 50px;
+      height: 3px;
+      border-radius: 3px;
+      display: block;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -25px; }
+      .content .icon-animation span:before, .content .icon-animation span:after {
+        content: ''; }
