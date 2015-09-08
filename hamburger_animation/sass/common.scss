@@ -31,26 +31,124 @@ html,body{
 
 .content{
   width: 100%;
-  .icon-animation{
-    width: 20%;
-    height: 200px;
-    float: left;
+}
+
+.icon-animation{
+  width: 20%;
+  height: 200px;
+  float: left;
+  display: block;
+  background: rgba(255,255,255,0.02);
+  position: relative;
+  span{
+    width: 50px;
+    height: 1px;
     display: block;
-    background: rgba(255,255,255,0.02);
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    transform: rotate(0deg);
+  }
+  .top{
+    transform: translateY(-17px);
+  }
+  .bottom{
+    transform: translateY(17px);
+  }
+}
+
+.type-1{
+  span{
+    transition: all 0.3s;
+  }
+  &.is-open{
+    .middle{
+      background: rgba(255,255,255,0);
+    }
+    .top{
+      transform: rotate(-45deg) translateY(0px);
+    }
+    .bottom{
+      transform: rotate(45deg) translateY(0px);
+    }
+  }
+}
+
+.type-2{
+  span{
+    transition: all 0.3s;
+  }
+  .middle{
+    transform: translateX(0px);
+  }
+  &.is-open{
+    .middle{
+      transform: translateX(50px);
+      background: rgba(255,255,255,0);
+    }
+    .top{
+      transform: rotate(-45deg) translateY(0px);
+    }
+    .bottom{
+      transform: rotate(45deg) translateY(0px);
+    }
+  }
+}
+
+.type-3 {
+  span{
+    transition: all 0.5s;
+    transform:translateY(0px) !important;
+  }
+  .top{
+    margin-top: -17px;
+  }
+  .bottom{
+    margin-top: 17px;
+  }
+  &.is-open{
+    .middle{
+      background: rgba(255,255,255,0);
+    }
+    .top{
+      transform: rotate(-405deg) !important;
+      margin-top: 0px;
+    }
+    .bottom{
+      transform: rotate(405deg)!important;
+      margin-top: 0px;
+    }
+  }
+}
+
+.type-4 {
+  span{
+    transition: all 0.5s;
+    transform:translateY(0px) !important;
     position: relative;
-    span{
-      width: 50px;
-      height: 3px;
-      border-radius: 3px;
-      display: block;
-      background: #fff;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -25px;
-      &:before,&:after{
-        content:'';
-      }
+    &:before{
+
+    }
+  }
+  .top{
+    margin-top: -17px;
+  }
+  .bottom{
+    margin-top: 17px;
+  }
+  &.is-open{
+    .middle{
+      background: rgba(255,255,255,0);
+    }
+    .top{
+      transform: rotate(-405deg) !important;
+      margin-top: 0px;
+    }
+    .bottom{
+      transform: rotate(405deg)!important;
+      margin-top: 0px;
     }
   }
 }

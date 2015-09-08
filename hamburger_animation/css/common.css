@@ -128,22 +128,130 @@ html, body {
 
 .content {
   width: 100%; }
-  .content .icon-animation {
-    width: 20%;
-    height: 200px;
-    float: left;
+
+.icon-animation {
+  width: 20%;
+  height: 200px;
+  float: left;
+  display: block;
+  background: rgba(255, 255, 255, 0.02);
+  position: relative; }
+  .icon-animation span {
+    width: 50px;
+    height: 1px;
     display: block;
-    background: rgba(255, 255, 255, 0.02);
-    position: relative; }
-    .content .icon-animation span {
-      width: 50px;
-      height: 3px;
-      border-radius: 3px;
-      display: block;
-      background: #fff;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -25px; }
-      .content .icon-animation span:before, .content .icon-animation span:after {
-        content: ''; }
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  .icon-animation .top {
+    -webkit-transform: translateY(-17px);
+        -ms-transform: translateY(-17px);
+            transform: translateY(-17px); }
+  .icon-animation .bottom {
+    -webkit-transform: translateY(17px);
+        -ms-transform: translateY(17px);
+            transform: translateY(17px); }
+
+.type-1 span {
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
+
+.type-1.is-open .middle {
+  background: rgba(255, 255, 255, 0); }
+
+.type-1.is-open .top {
+  -webkit-transform: rotate(-45deg) translateY(0px);
+      -ms-transform: rotate(-45deg) translateY(0px);
+          transform: rotate(-45deg) translateY(0px); }
+
+.type-1.is-open .bottom {
+  -webkit-transform: rotate(45deg) translateY(0px);
+      -ms-transform: rotate(45deg) translateY(0px);
+          transform: rotate(45deg) translateY(0px); }
+
+.type-2 span {
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
+
+.type-2 .middle {
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px); }
+
+.type-2.is-open .middle {
+  -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+          transform: translateX(50px);
+  background: rgba(255, 255, 255, 0); }
+
+.type-2.is-open .top {
+  -webkit-transform: rotate(-45deg) translateY(0px);
+      -ms-transform: rotate(-45deg) translateY(0px);
+          transform: rotate(-45deg) translateY(0px); }
+
+.type-2.is-open .bottom {
+  -webkit-transform: rotate(45deg) translateY(0px);
+      -ms-transform: rotate(45deg) translateY(0px);
+          transform: rotate(45deg) translateY(0px); }
+
+.type-3 span {
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  -webkit-transform: translateY(0px) !important;
+      -ms-transform: translateY(0px) !important;
+          transform: translateY(0px) !important; }
+
+.type-3 .top {
+  margin-top: -17px; }
+
+.type-3 .bottom {
+  margin-top: 17px; }
+
+.type-3.is-open .middle {
+  background: rgba(255, 255, 255, 0); }
+
+.type-3.is-open .top {
+  -webkit-transform: rotate(-405deg) !important;
+      -ms-transform: rotate(-405deg) !important;
+          transform: rotate(-405deg) !important;
+  margin-top: 0px; }
+
+.type-3.is-open .bottom {
+  -webkit-transform: rotate(405deg) !important;
+      -ms-transform: rotate(405deg) !important;
+          transform: rotate(405deg) !important;
+  margin-top: 0px; }
+
+.type-4 span {
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  -webkit-transform: translateY(0px) !important;
+      -ms-transform: translateY(0px) !important;
+          transform: translateY(0px) !important;
+  position: relative; }
+
+.type-4 .top {
+  margin-top: -17px; }
+
+.type-4 .bottom {
+  margin-top: 17px; }
+
+.type-4.is-open .middle {
+  background: rgba(255, 255, 255, 0); }
+
+.type-4.is-open .top {
+  -webkit-transform: rotate(-405deg) !important;
+      -ms-transform: rotate(-405deg) !important;
+          transform: rotate(-405deg) !important;
+  margin-top: 0px; }
+
+.type-4.is-open .bottom {
+  -webkit-transform: rotate(405deg) !important;
+      -ms-transform: rotate(405deg) !important;
+          transform: rotate(405deg) !important;
+  margin-top: 0px; }
