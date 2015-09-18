@@ -635,8 +635,8 @@ html, body {
     position: absolute; }
   .type-9 .middle:before {
     content: "";
-    -webkit-transition: all 0.4s 0.4s;
-            transition: all 0.4s 0.4s;
+    -webkit-transition: all 0.4s;
+            transition: all 0.4s;
     width: 50px;
     display: block;
     height: 1px;

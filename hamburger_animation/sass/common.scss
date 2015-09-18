@@ -437,7 +437,7 @@ html, body {
     }
     &:before{
       content: "";
-      transition: all 0.4s 0.4s;
+      transition: all 0.4s;
       width: 50px;
       display: block;
       height: 1px;
@@ -481,4 +481,8 @@ html, body {
     border: 1px solid #fff;
     transform:scale(1.5);
   }
+}
+
+.type-10{
+
 }
