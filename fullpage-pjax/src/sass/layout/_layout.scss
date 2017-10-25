@@ -26,6 +26,12 @@ body{
 .content-blue{
   background: #DFECF5;
 }
+.content-orange{
+  background: #FFDCC8;
+}
+.content-green{
+  background: #B7DFD2;
+}
 
 .svg{
   width: 400px;
@@ -206,5 +212,22 @@ body{
   svg{
     top:-5px;
     transform:rotate(-90deg);
+  }
+}
+
+.page-cover{
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  position: fixed;
+  display: block;
+  background: #fff;
+  z-index: 10;
+  opacity: 1;
+  transform:translateY(0%);
+  transition: transform 1s, opacity .5s;
+  &.is-up{
+    transform:translateY(-100%);
+    opacity: 0;
   }
 }
