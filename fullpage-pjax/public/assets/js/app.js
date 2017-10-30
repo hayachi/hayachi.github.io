@@ -131,7 +131,7 @@ $.pjax({
  Pjax実行前
  */
 $(document).on('pjax:fetch', function () {
-    console.log('実行前');
+
     //幕を閉じる
     $('.page-cover').removeClass('is-up');
 
@@ -149,7 +149,6 @@ $(document).on('pjax:fetch', function () {
  Pjax実行後
  */
 $(document).on('pjax:ready', function () {
-    console.log('実行後');
 
     setTimeout(function () {
         //幕を開ける

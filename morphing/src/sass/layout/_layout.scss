@@ -1,0 +1,99 @@
+.clearfix {
+  zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.l-wrapper{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.l-loading{
+  z-index: 10;
+  height: 200vh;
+  left: 0px;
+  top:0vh;
+  width: 100%;
+  position:fixed;
+}
+
+.l-loading-inner{
+  position: relative;
+  height: 100vh;
+  display: block;
+  background: #710096;
+}
+
+.shape{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  fill: #710096;
+  transform: scaleY(1);
+}
+
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%,-50%);
+  display: block;
+  margin: auto;
+  p{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: $base-background-color;
+  }
+  svg{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0px auto;
+    animation: anime 1.5s ease infinite alternate;
+  }
+}
+
+.cls-1 {
+  fill: #ef7e33;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+}
+
+.cls-2 {
+  fill: #661785;
+}
+
+.cls-3 {
+  fill: #fff;
+}
+
+@keyframes anime {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes anime {
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
+ }
+
+@-moz-keyframes anime {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@-ms-keyframes anime {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
