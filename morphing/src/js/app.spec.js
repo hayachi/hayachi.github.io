@@ -1,9 +1,9 @@
-import './app';
-describe('app', () => {
-  beforeEach(() => {
-
-  });
-  it('init', () => {
-    expect('a').toBe('a');
-  });
-});
+//import './app';
+//describe('app', () => {
+//  beforeEach(() => {
+//
+//  });
+//  it('init', () => {
+//    expect('a').toBe('a');
+//  });
+//});

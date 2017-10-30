@@ -2,9 +2,6 @@
  * @constructor
  */
 
-import $ from 'jquery';
-import anime from 'animejs';
-
 let $window = $(window);
 
 const DOM = {}; //オブジェクト化
