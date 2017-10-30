@@ -9597,10 +9597,6 @@ var _animejs2 = _interopRequireDefault(_animejs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * @constructor
- */
-
 var $window = (0, _jquery2.default)(window);
 
 var DOM = {}; //オブジェクト化
