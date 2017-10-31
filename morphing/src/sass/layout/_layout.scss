@@ -29,15 +29,7 @@
   position: relative;
   height: 100vh;
   display: block;
-  background: #710096;
-}
-
-.shape{
-  height: 100vh;
-  width: 100%;
-  display: block;
-  fill: #710096;
-  transform: scaleY(1);
+  background: #575D62;
 }
 
 .loading{
@@ -53,7 +45,7 @@
     font-size: 35px;
     text-align: center;
     font-weight: bold;
-    color: $base-background-color;
+    color: #fff;
   }
   svg{
     width: 150px;
@@ -64,18 +56,43 @@
   }
 }
 
+.shape{
+  height: 100vh;
+  width: 100%;
+  display: block;
+  fill: #575D62;
+  transform: scaleY(1);
+}
+
 .cls-1 {
-  fill: #ef7e33;
+  fill: #fff;
   stroke-miterlimit: 10;
   stroke-width: 4px;
 }
 
 .cls-2 {
-  fill: #661785;
+  fill: #575D62;
 }
 
 .cls-3 {
   fill: #fff;
+}
+
+.reload{
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 40px;
+  transform: translate(-50%,-50%);
+  transition: opacity .3s;
+  a{
+    color: #575D62;
+  }
+  &:hover{
+    opacity:0.5;
+  }
 }
 
 @keyframes anime {

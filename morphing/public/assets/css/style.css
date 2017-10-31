@@ -1,3 +1,128 @@
 @charset "UTF-8";
 /*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
-:root{-ms-overflow-style:-ms-autohiding-scrollbar;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}audio:not([controls]){display:none}details,main,summary{display:block}input[type=number]{width:auto}input[type=search]{-webkit-appearance:textfield}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}pre,textarea{overflow:auto}progress{display:inline-block}small{font-size:75%}[hidden],template{display:none}[unselectable]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}*,::after,::before{box-sizing:inherit}*{font-size:inherit;line-height:inherit}::after,::before{text-decoration:inherit;vertical-align:inherit}*,::after,::before{border-style:solid;border-width:0}*{margin:0;padding:0}:root{box-sizing:border-box;cursor:default;font:16px/1.5 sans-serif;text-rendering:optimizeLegibility}html{background-color:#fff}a{text-decoration:none}audio,canvas,iframe,img,svg,video{vertical-align:middle}button,input,select,textarea{background-color:transparent;color:inherit;font-family:inherit;font-style:inherit;font-weight:inherit}[type=button],[type=date],[type=datetime-local],[type=datetime],[type=email],[type=month],[type=number],[type=password],[type=reset],[type=search],[type=submit],[type=tel],[type=text],[type=time],[type=url],[type=week],button,select,textarea{min-height:1.5em}code,kbd,pre,samp{font-family:monospace,monospace}nav ol,nav ul{list-style:none}select{-moz-appearance:none;-webkit-appearance:none}select::-ms-expand{display:none}select::-ms-value{color:currentColor}table{border-collapse:collapse;border-spacing:0}textarea{resize:vertical}::-moz-selection{background-color:#b3d4fc;text-shadow:none}::selection{background-color:#b3d4fc;text-shadow:none}@media screen{[hidden~=screen]{display:inherit}[hidden~=screen]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0)!important;position:absolute!important}}body{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased;text-rendering:auto;font-size:14px;font-family:"Comfortaa",cursive;color:#333;background-color:#ff8e31}.clearfix{zoom:1}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.l-wrapper{height:100vh;width:100%;overflow:hidden;position:relative}.l-loading{z-index:10;height:200vh;left:0;top:0;width:100%;position:fixed}.l-loading-inner,.shape{height:100vh;display:block}.l-loading-inner{position:relative;background:#710096}.shape{width:100%;fill:#710096;-webkit-transform:scaleY(1);-ms-transform:scaleY(1);transform:scaleY(1)}.loading{position:absolute;top:50%;left:50%;width:300px;height:300px;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:block;margin:auto}.loading p{font-size:35px;text-align:center;font-weight:700;color:#ff8e31}.loading svg{width:150px;height:150px;display:block;margin:0 auto;-webkit-animation:anime 1.5s ease infinite alternate;animation:anime 1.5s ease infinite alternate}.cls-1{fill:#ef7e33;stroke-miterlimit:10;stroke-width:4px}.cls-2{fill:#661785}.cls-3{fill:#fff}@keyframes anime{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes anime{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+/* Normalization */
+:root { -ms-overflow-style: -ms-autohiding-scrollbar; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+audio:not([controls]) { display: none; }
+
+details { display: block; }
+
+input[type="number"] { width: auto; }
+
+input[type="search"] { -webkit-appearance: textfield; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+main { display: block; }
+
+summary { display: block; }
+
+pre { overflow: auto; }
+
+progress { display: inline-block; }
+
+small { font-size: 75%; }
+
+template { display: none; }
+
+textarea { overflow: auto; }
+
+[hidden] { display: none; }
+
+[unselectable] { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* Universal inheritance */
+*, ::before, ::after { box-sizing: inherit; }
+
+* { font-size: inherit; line-height: inherit; }
+
+::before, ::after { text-decoration: inherit; vertical-align: inherit; }
+
+/* Opinionated defaults */
+*, ::before, ::after { border-style: solid; border-width: 0; }
+
+* { margin: 0; padding: 0; }
+
+:root { box-sizing: border-box; cursor: default; font: 16px / 1.5 sans-serif; text-rendering: optimizeLegibility; }
+
+html { background-color: #FFFFFF; }
+
+a { text-decoration: none; }
+
+audio, canvas, iframe, img, svg, video { vertical-align: middle; }
+
+button, input, select, textarea { background-color: transparent; }
+
+button, input, select, textarea { color: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; }
+
+button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="month"], [type="number"], [type="password"], [type="reset"], [type="search"], [type="submit"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], select, textarea { min-height: 1.5em; }
+
+code, kbd, pre, samp { font-family: monospace, monospace; }
+
+nav ol, nav ul { list-style: none; }
+
+select { -moz-appearance: none; -webkit-appearance: none; }
+
+select::-ms-expand { display: none; }
+
+select::-ms-value { color: currentColor; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+textarea { resize: vertical; }
+
+::-moz-selection { background-color: #B3D4FC; text-shadow: none; }
+
+::selection { background-color: #B3D4FC; text-shadow: none; }
+
+@media screen { [hidden~="screen"] { display: inherit; }
+  [hidden~="screen"]:not(:active):not(:focus):not(:target) { clip: rect(0 0 0 0) !important; position: absolute !important; } }
+
+/*
+#styleguide
+基本スタイル
+
+```
+<p>特に何も指定しないときの状態</p>
+```
+*/
+body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smoothing: antialiased; text-rendering: auto; font-size: 14px; font-family: "Comfortaa", cursive; color: #333; background-color: #f1f7fa; }
+
+.clearfix { zoom: 1; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+
+.clearfix:after { clear: both; }
+
+.l-wrapper { height: 100vh; width: 100%; overflow: hidden; position: relative; }
+
+.l-loading { z-index: 10; height: 200vh; left: 0px; top: 0vh; width: 100%; position: fixed; }
+
+.l-loading-inner { position: relative; height: 100vh; display: block; background: #575D62; }
+
+.loading { position: absolute; top: 50%; left: 50%; width: 300px; height: 300px; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: block; margin: auto; }
+
+.loading p { font-size: 35px; text-align: center; font-weight: bold; color: #fff; }
+
+.loading svg { width: 150px; height: 150px; display: block; margin: 0px auto; -webkit-animation: anime 1.5s ease infinite alternate; animation: anime 1.5s ease infinite alternate; }
+
+.shape { height: 100vh; width: 100%; display: block; fill: #575D62; -webkit-transform: scaleY(1); -ms-transform: scaleY(1); transform: scaleY(1); }
+
+.cls-1 { fill: #fff; stroke-miterlimit: 10; stroke-width: 4px; }
+
+.cls-2 { fill: #575D62; }
+
+.cls-3 { fill: #fff; }
+
+.reload { text-align: center; font-weight: bold; position: absolute; left: 50%; top: 50%; font-size: 40px; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: opacity .3s; transition: opacity .3s; }
+
+.reload a { color: #575D62; }
+
+.reload:hover { opacity: 0.5; }
+
+@keyframes anime { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@-webkit-keyframes anime { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+/*# sourceMappingURL=maps/style.css.map */
