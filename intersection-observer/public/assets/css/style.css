@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
+/* Normalization */
+:root { -ms-overflow-style: -ms-autohiding-scrollbar; overflow-y: scroll; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+audio:not([controls]) { display: none; }
+
+details { display: block; }
+
+input[type="number"] { width: auto; }
+
+input[type="search"] { -webkit-appearance: textfield; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+main { display: block; }
+
+summary { display: block; }
+
+pre { overflow: auto; }
+
+progress { display: inline-block; }
+
+small { font-size: 75%; }
+
+template { display: none; }
+
+textarea { overflow: auto; }
+
+[hidden] { display: none; }
+
+[unselectable] { -webkit-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* Universal inheritance */
+*, ::before, ::after { box-sizing: inherit; }
+
+* { font-size: inherit; line-height: inherit; }
+
+::before, ::after { text-decoration: inherit; vertical-align: inherit; }
+
+/* Opinionated defaults */
+*, ::before, ::after { border-style: solid; border-width: 0; }
+
+* { margin: 0; padding: 0; }
+
+:root { box-sizing: border-box; cursor: default; font: 16px / 1.5 sans-serif; text-rendering: optimizeLegibility; }
+
+html { background-color: #FFFFFF; }
+
+a { text-decoration: none; }
+
+audio, canvas, iframe, img, svg, video { vertical-align: middle; }
+
+button, input, select, textarea { background-color: transparent; }
+
+button, input, select, textarea { color: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; }
+
+button, [type="button"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="month"], [type="number"], [type="password"], [type="reset"], [type="search"], [type="submit"], [type="tel"], [type="text"], [type="time"], [type="url"], [type="week"], select, textarea { min-height: 1.5em; }
+
+code, kbd, pre, samp { font-family: monospace, monospace; }
+
+nav ol, nav ul { list-style: none; }
+
+select { -moz-appearance: none; -webkit-appearance: none; }
+
+select::-ms-expand { display: none; }
+
+select::-ms-value { color: currentColor; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+textarea { resize: vertical; }
+
+::selection { background-color: #B3D4FC; text-shadow: none; }
+
+@media screen { [hidden~="screen"] { display: inherit; }
+  [hidden~="screen"]:not(:active):not(:focus):not(:target) { clip: rect(0 0 0 0) !important; position: absolute !important; } }
+
+/*
+#styleguide
+基本スタイル
+
+```
+<p>特に何も指定しないときの状態</p>
+```
+*/
+body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-smoothing: antialiased; text-rendering: auto; font-size: 14px; font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; color: #333; background-color: #fff; }
+
+.clearfix { zoom: 1; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+
+.clearfix:after { clear: both; }
+
+body { background: #dfecf5; }
+
+.l-wrapper { font-family: 'Comfortaa', cursive; }
+
+.title { display: block; text-align: center; padding: 100px 0px 0px 0px; color: #3b4347; }
+
+.title h1 { letter-spacing: 2px; font-weight: 700; font-size: 50px; }
+
+.title h2 { letter-spacing: 2px; font-size: 20px; }
+
+.section { height: 800px; position: relative; }
+
+.section img { display: block; width: 200px; height: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0; transition: .5s opacity; }
+
+.section.is-show img { opacity: 1; }
+
+.section--1 img { top: 40%; }
+
+.section--2 { background: #cce0ef; }
+
+.section--3 { background: #b8d5e9; }
+
+.section--4 { background: #91bedd; }
+
+.icon { display: inline-block; background-repeat: no-repeat; }
+
+.icon.icon-web-navigation-line-craft-1-109681 { background-image: url("../images/icon.png"); background-position: 0px 0px; background-size: 1540px 1026px; width: 512px; height: 512px; }
+
+.icon.icon-web-navigation-line-craft-2-109682 { background-image: url("../images/icon.png"); background-position: -514px 0px; background-size: 1540px 1026px; width: 512px; height: 512px; }
+
+.icon.icon-web-navigation-line-craft-3-109688 { background-image: url("../images/icon.png"); background-position: 0px -514px; background-size: 1540px 1026px; width: 512px; height: 512px; }
+
+.icon.icon-web-navigation-line-craft-4-109689 { background-image: url("../images/icon.png"); background-position: -514px -514px; background-size: 1540px 1026px; width: 512px; height: 512px; }
+
+.icon.icon-web-navigation-line-craft-5-109690 { background-image: url("../images/icon.png"); background-position: -1028px 0px; background-size: 1540px 1026px; width: 512px; height: 512px; }
+/*# sourceMappingURL=maps/style.css.map */
