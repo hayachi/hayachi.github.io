@@ -76,35 +76,36 @@ console.warn("This script is development version.");
 
 var callback = function callback(entries, observer) {
     entries.forEach(function (entry) {
-        //console.log(entry.target)
         //console.log(entry.time)
         //console.log(entry.isIntersecting)
         //console.log(entry.intersectionRatio)
         //console.log(entry.boundingClientRect)
-        //console.log(entry.intersectionRect)
+        //console.log(entry.intersectionRect,entry.target)
         //console.log(entry.rootBounds)
 
         if (entry.isIntersecting === true) {
-            console.log('test');
+            console.log('test', entry.target);
             entry.target.classList.add('is-show');
         }
     });
 };
 
-var options1 = { root: null, rootMargin: '30%', threshold: 1.0 };
+var options1 = { root: null, rootMargin: '0px', threshold: 0 };
 var observer1 = new IntersectionObserver(callback, options1);
 var target1 = document.querySelector('.section--1');
 observer1.observe(target1);
 
-var options2 = { root: null, rootMargin: '30%', threshold: 1.0 };
+var options2 = { root: null, rootMargin: '0px', threshold: 1.0 };
 var observer2 = new IntersectionObserver(callback, options2);
 var target2 = document.querySelector('.section--2');
 observer2.observe(target2);
 
-var options3 = { root: null, rootMargin: '30%', threshold: 1.0 };
+var options3 = { root: null, rootMargin: '0px', threshold: 1.0 };
 var observer3 = new IntersectionObserver(callback, options3);
 var target3 = document.querySelector('.section--3');
 observer3.observe(target3);
+
+var layzyImage = document.querySelectorAll('img.lazyload');
 
 /***/ }
 /******/ ]);
