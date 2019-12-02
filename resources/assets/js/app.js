@@ -26,7 +26,7 @@ function initialize(){
   ],{name: 'Styled Map'});
 
   //マーカー用の画像
-  let image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+  let image = 'http://hayachi.github.io/images/pin.png';
 
   //マーカー
   let beachMarker = new google.maps.Marker({
